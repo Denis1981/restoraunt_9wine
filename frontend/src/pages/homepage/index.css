@@ -1,0 +1,14 @@
+/**
+* Main
+ **/
+
+#main {
+    overflow: hidden;
+    background: url('../../assets/mainblock.png') no-repeat center;
+    width: 100%;
+    height: 800px;
+}
+
+
+
+
