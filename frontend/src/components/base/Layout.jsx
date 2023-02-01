@@ -6,10 +6,10 @@ import Footer from './footer/Footer';
 const Layout = () => {
     return (
         <>
-            <Header />
+            {/*<Header />*/}
             {/*<Navbar />*/}
             <Outlet />
-            <Footer />
+            {/*<Footer />*/}
         </>
     );
 }

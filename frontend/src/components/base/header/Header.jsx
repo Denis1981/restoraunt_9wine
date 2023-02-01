@@ -1,5 +1,5 @@
 import "./index.css";
-import { logo } from ".././././../../assets";
+import { logoMain } from ".././././../../assets";
 import { header } from ".././././../../constants";
 
 
@@ -13,14 +13,13 @@ const Header = () => {
                              {header.map((textHeader) => (
                                 <div className="addr">
                                    <address>
-                                       <p>{textHeader.content}</p>
+                                       <p>{textHeader.address}</p>
                                        <p><a href={`tel: ${textHeader.tel}`}>{textHeader.tel}</a></p>
                                    </address>
                                 </div>
                              ))}
                         </div>
                         <div className="col-xxl-4">
-                             <img src={logo} alt="" className="logo" />
                         </div>
                         <div className="col-xxl-2">
                            social

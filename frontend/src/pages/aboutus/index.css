@@ -1,0 +1,9 @@
+/**
+* AboutUs
+ **/
+
+#aboutUs {
+     overflow: hidden;
+     border: 10px solid #ccc;
+     margin: 1px 0 1px 0;
+}

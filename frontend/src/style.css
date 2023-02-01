@@ -9,12 +9,16 @@
 :root {
   /*--color-bg: #2C2C32;*/
   /*--color-bg-hover: #0f7dc6;*/
-  --color-active: #0000ff !important;
+  --color-active: #FF8700 !important;
 }
 
 .active {
   color: var(--color-active) !important;
   cursor: default;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 

@@ -1,0 +1,91 @@
+/**
+* Main
+ **/
+
+#main {
+    overflow: hidden;
+    background: url('../../assets/mainblock.jpg') no-repeat center;
+    width: 100%;
+    height: 935px;
+    margin-top: -100px;
+    /*border: 10px solid #FF8700;*/
+}
+
+#main h1 {
+    font-size: 18px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+}
+
+#main .main__logoMain {
+    width: 100%;
+    height:150px;
+    margin: 180px auto 0 auto;
+    display: block;
+
+}
+
+#main .main__headerUnderLogo {
+    width: 400px;
+    height: 60px;
+    margin: 20px auto 0 auto;
+    display: block;
+
+}
+
+#main .btn.main__btn-reserve {
+    width: 300px;
+    height: 70px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+    margin: 50px 0 0 0;
+}
+
+#main .btn.main__btn-reserve:hover {
+    transition: all .5s;
+    background: #FF8700 !important;
+    border: none;
+}
+
+#main .main__menu-block {
+    margin: 50px 0;
+}
+
+#main .main__menu-block ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#main .main__menu-block ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+}
+
+
+#main .main__menu-block ul li a:hover {
+    transition: all .5s;
+    color: #FF8700 !important;
+}
+
+#main .main__social-block {
+    margin: 20px 0;
+}
+
+#main .main__social-block img{
+    width: 40px;
+    height: 40px;
+}
+
+#main .main__social-block ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
