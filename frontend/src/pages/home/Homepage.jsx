@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import "./index.css";
 import { logoMain, headerUnderLogo, vk, tg} from "../../assets";
-import Header from '../../components/base/header/Header';
+
 
 
 const Homepage = () => {
@@ -10,7 +10,7 @@ const Homepage = () => {
 
    return (
        <>
-            <Header/>
+
             <section id="main">
                 <div className="container">
                     <div className="row">

@@ -1,9 +1,10 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import "./index.css";
+import Navbar from '../../components/base/navbar/Navbar';
 import Footer from '../../components/base/footer/Footer';
 import Map from '../../components/map/Map';
-import Navbar from '../../components/base/navbar/Navbar';
+
 
 const Contactspage = () => {
     return (
@@ -25,7 +26,7 @@ const Contactspage = () => {
                         </ul>
                         <p><b>информация и резерв:</b></p>
                         <p><b>whatsapp:</b> <a href="tel:78126025281">7 (812) 602-52-81</a></p>
-                        <p><b>email:</b> <a href="mailto:"></a></p>
+                        <p><b>email:</b> <a href="mailto:9wines.sadovya@gmail.com">9wines.sadovya@gmail.com</a></p>
                         <address>
                             <p>
                                 <strong>Винный ресторан NineWines</strong> — находится в самом сердце Санкт-Петербурга, на Садовой улице, в двух минутах ходьбы от Невского проспекта в сторону Итальянской улицы по адресу: <b>Санкт-Петербург, Садовая улица, 7-9-11</b></p>

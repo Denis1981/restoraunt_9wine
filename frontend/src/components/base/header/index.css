@@ -6,7 +6,17 @@ header-block
     overflow: hidden;
     background: none !important;
     height: 100px;
+}
 
+#header-block p{
+    font-size: 14px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+#header-block a{
+    color: #fff !important;
 }
 
 

@@ -40,8 +40,11 @@ const Navbar = () => {
                             <li><Link className="dropdown-item" to="">День рождения в Wine</Link></li>
                           </ul>
                         </li>
-                       <li className="nav-item">
-                         <CustomLink className="nav-link" to="/">Отзывы</CustomLink>
+                        <li className="nav-item">
+                         <CustomLink className="nav-link" to="">Бронирование</CustomLink>
+                        </li>
+                        <li className="nav-item">
+                         <CustomLink className="nav-link" to="">Отзывы</CustomLink>
                         </li>
                         <li className="nav-item">
                             <CustomLink className="nav-link" to="/contacts">Контакты</CustomLink>

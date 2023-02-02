@@ -4,10 +4,10 @@
 
 #main {
     overflow: hidden;
-    background: url('../../assets/mainblock.jpg') no-repeat center;
+    background: url('../../assets/mainblock.webp') no-repeat center;
     width: 100%;
-    height: 935px;
-    margin-top: -100px;
+    height: 937px;
+    margin-top: 0;
     /*border: 10px solid #FF8700;*/
 }
 
@@ -37,6 +37,7 @@
     width: 300px;
     height: 70px;
     border: 2px solid #fff;
+    border-radius: 0;
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
@@ -47,7 +48,7 @@
 
 #main .btn.main__btn-reserve:hover {
     transition: all .5s;
-    background: #FF8700 !important;
+    background: #AB0508 !important;
     border: none;
 }
 
