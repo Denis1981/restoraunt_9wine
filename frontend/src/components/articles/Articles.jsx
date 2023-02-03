@@ -9,7 +9,7 @@ function ArticlesPage() {
     const [articles, setArticles]=useState([])
     const [loading, setLoading]=useState([false])
     const [currentPage, setCurrentPage] = useState(1)
-    const [articlesPerPage] = useState(3)
+    const [articlesPerPage] = useState(6)
 
     useEffect(()=>{
         const getArticles = async () => {

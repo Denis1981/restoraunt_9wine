@@ -16,7 +16,7 @@ const Footer = () => {
                                   <img src={logoFooter} alt="" title="" className="logo" />
                                   <address>
                                        {footer.map((textFooter) => (
-                                           <p className="p-4">
+                                           <p className="p-4" key={textFooter.id}>
                                                 <b>
                                                     {textFooter.address}
                                                     <br />
@@ -42,14 +42,14 @@ const Footer = () => {
                                       <p><Link to="/degustation">Дегустационные вечера</Link></p>
                                       <p><Link to="/corporates">Корпоративы</Link></p>
                                       <p><Link to="/happy-birthday">День рождения в Nine Wines</Link></p>
-                                      <p><Link to=""></Link></p>
+
                                    </div>
 
                               </div>
                               <div className="col-xxl-3">
                                    <div className="footer-block__text">
                                       <p><b>Дополнительно</b></p>
-                                      <p><Link to="/artcles">Блог</Link></p>
+                                      <p><Link to="/articles">Блог</Link></p>
                                       <p><Link to="/reservation">Бронирование</Link></p>
                                       <p><Link to="/polytics">Политика конфиденциальности</Link></p>
                                    </div>
