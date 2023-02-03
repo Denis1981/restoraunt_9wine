@@ -11,16 +11,10 @@ import { image1_about,
          image6_aboutBlock,
          image1_karaokeBlock
 } from "../../assets";
-import Navbar from '../../components/base/navbar/Navbar';
-import Footer from '../../components/base/footer/Footer';
 
 const AboutUspage = () => {
-
-
     return (
-
     <>
-        <Navbar />
         <section id="aboutUs">
                <div className="container">
                    <div className="row">
@@ -112,7 +106,6 @@ const AboutUspage = () => {
                     </div>
                 </div>
            </section>
-    <Footer />
     </>);
 }
 
