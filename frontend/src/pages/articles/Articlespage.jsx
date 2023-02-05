@@ -23,4 +23,3 @@ const Articlespage = () => {
 
 export default Articlespage;
 
-// доделать пагинацию

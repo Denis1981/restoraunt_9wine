@@ -11,6 +11,7 @@ import image4_aboutBlock from "./aboutBlock_image4.webp";
 import image5_aboutBlock from "./aboutBlock_image5.webp";
 import image6_aboutBlock from "./aboutBlock_image6.webp";
 import image1_karaokeBlock from "./karaokeBlock_image1.webp";
+import photo_menu1 from "./photo-menu1.webp";
 
 import vk from "./vk.webp";
 import tg from "./tg.webp";
@@ -31,5 +32,6 @@ export {
     image4_aboutBlock,
     image5_aboutBlock,
     image6_aboutBlock,
-    image1_karaokeBlock
+    image1_karaokeBlock,
+    photo_menu1
 };

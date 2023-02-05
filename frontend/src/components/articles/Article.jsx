@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Link} from 'react-router-dom';
 
 const Article = ({ articles, loading } ) => {
+
     if(loading) {
         return (<h2>Загрузка...</h2>)
     }
@@ -9,7 +10,7 @@ const Article = ({ articles, loading } ) => {
         <div className="row">
             {
                 articles.map((articles, i) => (
-                    <div className="col-xxl-4">
+                    <div className="col-xxl-4" key={articles.id}>
                         <div className="card">
                             <img src={articles.photo} className="card-img-top" alt={articles.category} />
                               <div className="card-body">
@@ -28,4 +29,3 @@ const Article = ({ articles, loading } ) => {
 
 export default Article;
 
-// доделать пагинацию

@@ -1,0 +1,29 @@
+/**
+* Menu
+ **/
+
+#menu {
+     overflow: hidden;
+     margin: 100px 0 0 0;
+     padding: 0 0 40px 0;
+}
+
+#menu h1 {
+    font-size: 38px;
+    font-family: 'OpenSans-Light',sans-serif;
+    font-weight: 600;
+    margin: 40px 0 40px 0;
+    text-transform: uppercase;
+}
+
+#menu h2 {
+    font-size: 20px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+
+#menu .menu__photo_menu1 {
+
+}
