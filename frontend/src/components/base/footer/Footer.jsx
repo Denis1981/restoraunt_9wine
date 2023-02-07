@@ -50,7 +50,7 @@ const Footer = () => {
                                    <div className="footer-block__text">
                                       <p><b>Дополнительно</b></p>
                                       <p><Link to="/articles">Блог</Link></p>
-                                      <p><Link to="/reservation">Бронирование</Link></p>
+                                      <p><Link to="/booking">Бронирование</Link></p>
                                       <p><Link to="/polytics">Политика конфиденциальности</Link></p>
                                    </div>
                               </div>

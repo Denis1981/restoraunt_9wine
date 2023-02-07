@@ -2,15 +2,17 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from django.views.static import serve
+
 
 from articles.views import *
 from menus.views import *
+from contacts.views import *
 from rest_framework import routers
 
 router = routers.SimpleRouter()
 router.register(r'articles', ArticleViewSet )
 router.register(r'menus', MenusViewSet )
+router.register(r'contacts', ContactsViewSet )
 
 
 urlpatterns = [

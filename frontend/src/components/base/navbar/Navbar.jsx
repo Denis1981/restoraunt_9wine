@@ -41,10 +41,10 @@ const Navbar = () => {
                           </ul>
                         </li>
                         <li className="nav-item">
-                         <CustomLink className="nav-link" to="">Бронирование</CustomLink>
+                         <CustomLink className="nav-link" to="/booking">Бронирование</CustomLink>
                         </li>
                         <li className="nav-item">
-                         <CustomLink className="nav-link" to="">Отзывы</CustomLink>
+                         <CustomLink className="nav-link" to="/reviews">Отзывы</CustomLink>
                         </li>
                         <li className="nav-item">
                             <CustomLink className="nav-link" to="/contacts">Контакты</CustomLink>
