@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'articles.apps.ArticlesConfig',
     'menus.apps.MenusConfig',
     'contacts.apps.ContactsConfig',
+    'sale.apps.SaleConfig',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
