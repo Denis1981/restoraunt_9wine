@@ -4,8 +4,9 @@
 
 #article {
      overflow: hidden;
-     margin: 80px 0 0 0;
+     margin: 75px 0 0 0;
      padding: 0 0 40px 0;
+     background: #F7FAFA;
 }
 
 #article h1 {

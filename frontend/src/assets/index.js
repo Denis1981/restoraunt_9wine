@@ -11,7 +11,13 @@ import image4_aboutBlock from "./aboutBlock_image4.webp";
 import image5_aboutBlock from "./aboutBlock_image5.webp";
 import image6_aboutBlock from "./aboutBlock_image6.webp";
 import image1_karaokeBlock from "./karaokeBlock_image1.webp";
-import photo_menu1 from "./photo-menu1.webp";
+import photo_menu from "./photo-menu1.webp";
+
+import wine_menu from "./wine.webp";
+import winebar_menu from "./wine-bar.webp";
+import bar_menu from "./bar.webp";
+import menu_menu from "./menu.webp";
+import line_menu from "./line.svg";
 
 import vk from "./vk.webp";
 import tg from "./tg.webp";
@@ -33,5 +39,10 @@ export {
     image5_aboutBlock,
     image6_aboutBlock,
     image1_karaokeBlock,
-    photo_menu1
+    photo_menu,
+    wine_menu,
+    winebar_menu,
+    bar_menu,
+    menu_menu,
+    line_menu,
 };

@@ -39,8 +39,6 @@ const Article = () => {
                     <div className="col-xxl-12">
                         {article && (
                         <>
-                            <img src={article.photo} className="article__image-top-article" alt={article.category} title={article.title}/>
-
                             <p className="article__text-content-article" dangerouslySetInnerHTML={{ __html: article.content }} />
                             <button className="btn btn_article__goback" onClick={goBack}>назад</button>
                         </>

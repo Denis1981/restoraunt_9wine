@@ -17,7 +17,6 @@ function ArticlesPage() {
                 .then(res => {
                     setLoading(true);
                     setArticles([...articles, ...res.data.results]);
-                    //setArticles(res.data.results);
                     setCurrentPage(prevState => prevState + 1);
                     setLoading(false);
                 })
