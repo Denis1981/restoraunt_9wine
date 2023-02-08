@@ -57,7 +57,7 @@ const AboutUspage = () => {
                     <div className="row">
                         {
                             sale.map((sale, i) => (
-                               <div className="col-xxl-6">
+                               <div className="col-xxl-6" key={sale.id}>
                                     <h2>{sale.title}</h2>
                                     <p dangerouslySetInnerHTML={{ __html: sale.contentSale }}/>
                                    <div className="special_notes-wine">
@@ -70,7 +70,7 @@ const AboutUspage = () => {
                         }
                         {
                             sale.map((sale, i) => (
-                               <div className="col-xxl-6 text-center">
+                               <div className="col-xxl-6 text-center" key={sale.id}>
                                     <img src={sale.photo} className="special_image1" alt="" title={sale.itemSale1}/>
                                </div>
                             ))
@@ -127,7 +127,7 @@ const AboutUspage = () => {
                 </div>
            </section>
 
-            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
                       <div className="modal-header">
@@ -135,7 +135,7 @@ const AboutUspage = () => {
                       </div>
                     {
                     sale.map((sale, i) => (
-                      <div className="modal-body">
+                      <div className="modal-body" key={sale.id}>
                           <img src={sale.photo} alt="" title={sale.itemSale1}/>
                           <p dangerouslySetInnerHTML={{ __html: sale.contentPopup }}/>
                       </div>

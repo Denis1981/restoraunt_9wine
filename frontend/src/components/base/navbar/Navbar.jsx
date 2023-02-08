@@ -28,18 +28,9 @@ const Navbar = () => {
                        <li className="nav-item">
                             <CustomLink className="nav-link" to="/articles">Блог</CustomLink>
                        </li>
-                        <li className="nav-item dropdown">
-                          <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Мероприятия
-                          </Link>
-                          <ul className="dropdown-menu">
-                            <li><Link className="dropdown-item" to="">Дегустационный винный вечер</Link></li>
-                            <li><Link className="dropdown-item" to="">Винный день рождения</Link></li>
-                            <li><Link className="dropdown-item" to="">Ночной клуб</Link></li>
-                            <li><Link className="dropdown-item" to="">Новогодние корпоративы</Link></li>
-                            <li><Link className="dropdown-item" to="">День рождения в Wine</Link></li>
-                          </ul>
-                        </li>
+                         <li className="nav-item">
+                            <CustomLink className="nav-link" to="/celebrates">Мероприятия</CustomLink>
+                       </li>
                         <li className="nav-item">
                          <CustomLink className="nav-link" to="/booking">Бронирование</CustomLink>
                         </li>
