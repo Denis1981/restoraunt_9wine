@@ -6,6 +6,7 @@ import Articlespage from './pages/articles/Articlespage';
 import Articlepage from './pages/article/Articlepage';
 import Bookingpage from './pages/bronirovanie/Bookingpage';
 import Contactspage from './pages/contacts/Contactspage';
+import Polyticspage from './pages/polytics/Polyticspage';
 import Notfoundpage from './pages/notfoundpage/Notfoundpage';
 import ScrollToTop from './utils/scrollToTop';
 import {Layout} from '././components/base/Layout';
@@ -25,6 +26,7 @@ function App() {
                     <Route path="articles/:id" element={<Articlepage />} />
                     <Route path="/booking" element={<Bookingpage />} />
                     <Route path="/contacts" element={<Contactspage />} />
+                    <Route path="/polytics" element={<Polyticspage />} />
                     <Route path="*" element={<Notfoundpage />} />
                 </Route>
             </Routes>

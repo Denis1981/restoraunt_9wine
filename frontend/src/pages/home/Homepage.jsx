@@ -27,7 +27,7 @@ const Homepage = () => {
                         <div className="col-xxl-12 text-center">
                             <img src={logoMain} alt="" title="" className="main__logoMain" />
                             <img src={headerUnderLogo} alt="" title="" className="main__headerUnderLogo" />
-                            <Link to="/booking" className="btn main__btn-reserve">забронировать</Link>
+                            <Link to="/booking" className="btn main__btn-reserve">зарезервировать</Link>
                         </div>
                     </div>
                     <div className="row justify-content-center">

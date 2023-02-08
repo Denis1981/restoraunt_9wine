@@ -46,14 +46,15 @@ const Navbar = () => {
                          <li className="nav-item">
                             <CustomLink className="nav-link" to="/celebrates">Мероприятия</CustomLink>
                        </li>
-                        <li className="nav-item">
-                         <CustomLink className="nav-link" to="/booking">Бронирование</CustomLink>
-                        </li>
+
                         <li className="nav-item">
                          <CustomLink className="nav-link" to="/reviews">Отзывы</CustomLink>
                         </li>
                         <li className="nav-item">
                             <CustomLink className="nav-link" to="/contacts">Контакты</CustomLink>
+                        </li>
+                       <li className="nav-item">
+                         <CustomLink className="nav-link" to="/booking">Зарезервировать</CustomLink>
                         </li>
                     </ul>
                     <p>

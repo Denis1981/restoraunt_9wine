@@ -48,10 +48,14 @@ const Footer = () => {
                                       <p><Link to="/articles">Блог</Link></p>
                                    </div>
                               </div>
-                              <div className="col-xxl-3">
+                              <div className="col-xxl-3 text-center">
                                    <div className="footer-block__text">
-                                      <p><Link to="/booking">Бронирование</Link></p>
                                       <p><Link to="/polytics">Политика конфиденциальности</Link></p>
+                                       <p>
+                                           <Link to="/booking">
+                                                <button type="button" className="btn btn-more" data-bs-dismiss="modal">зарезервировать стол</button>
+                                            </Link>
+                                       </p>
                                    </div>
                               </div>
                           </div>
