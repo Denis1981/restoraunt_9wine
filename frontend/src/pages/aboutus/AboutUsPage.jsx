@@ -119,7 +119,9 @@ const AboutUspage = () => {
                             <p>
                                 Наша атмосфера располагает к комфортному отдыху — современный стильный интерьер, отменное вино, прекрасная аппаратура! А новичкам и тем, кому нужна компания, помогают звукорежиссер и бэк-вокалисты. В перерывах между выступлениями гостей свою музыку презентуют модные ди-джеи.
                             </p>
-                            <button className="btn btn-more">узнать больше</button>
+                            <Link to="/booking">
+                                <button className="btn btn-more">узнать больше</button>
+                            </Link>
                         </div>
                         <div className="col-xxl-6">
                             <img src={image1_karaokeBlock} className="karaokeBlock__image" alt="" title="" />

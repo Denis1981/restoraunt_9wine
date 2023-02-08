@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import axios from "axios";
-import Article from './Article';
+import Celebrate from './Celebrate';
 import {API_URL_ARTICLES} from '../../api/constant';
 
-function ArticlesPage() {
+function Celebrates() {
     const [articles, setArticles]=useState([])
     const [currentPage, setCurrentPage]=useState(1)
     const [fetching, setFetching]=useState(true)
@@ -50,5 +50,5 @@ function ArticlesPage() {
   )
 }
 
-export default ArticlesPage;
+export default CelebratesPage;
 

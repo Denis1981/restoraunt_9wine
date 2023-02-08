@@ -6,7 +6,7 @@ import { logoMain, headerUnderLogo, vk, tg} from "../../assets";
 import {API_URL_CONTACTS} from '../../api/constant';
 
 
-const Homepage = () => {
+const HomePage = () => {
 
     const [contacts, setContacts]=useState([]);
 
@@ -76,4 +76,4 @@ const Homepage = () => {
    );
 }
 
-export default Homepage;
+export default HomePage;

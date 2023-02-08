@@ -5,7 +5,7 @@ import "./index.css";
 import Map from '../../components/map/Map';
 import {API_URL_CONTACTS} from '../../api/constant';
 
-const Contactspage = () => {
+const ContactsPage = () => {
 
     const [contacts, setContacts]=useState([]);
 
@@ -71,4 +71,4 @@ const Contactspage = () => {
     );
 };
 
-export default Contactspage;
+export default ContactsPage;

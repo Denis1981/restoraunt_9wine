@@ -29,7 +29,7 @@ const Navbar = () => {
                 </button>
                 {
                   contacts.map((contacts, i) => (
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent" key={contacts.id}>
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                           <CustomLink className="nav-link" to="/">Главная</CustomLink>

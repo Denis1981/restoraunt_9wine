@@ -5,7 +5,7 @@ import axios from "axios";
 import {API_URL_ARTICLE} from '../../api/constant';
 import "./index.css";
 
-const Article = () => {
+const ArticlePage = () => {
     const {id} = useParams();
     const navigate = useNavigate();
     const[article, setArticle]=useState(null);
@@ -51,5 +51,5 @@ const Article = () => {
     </>);
 }
 
-export default Article;
+export default ArticlePage;
 

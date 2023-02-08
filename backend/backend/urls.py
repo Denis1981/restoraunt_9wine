@@ -6,6 +6,7 @@ from django.conf.urls.static import static
 from sale.views import *
 from articles.views import *
 from menus.views import *
+from reviews.views import *
 from polytics.views import *
 from contacts.views import *
 from rest_framework import routers
@@ -14,6 +15,7 @@ router = routers.SimpleRouter()
 router.register(r'sale', SaleViewSet )
 router.register(r'articles', ArticleViewSet )
 router.register(r'menus', MenusViewSet )
+router.register(r'reviews', ReviewsViewSet )
 router.register(r'polytics', PolyticsViewSet )
 router.register(r'contacts', ContactsViewSet )
 

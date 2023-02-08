@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'contacts.apps.ContactsConfig',
     'sale.apps.SaleConfig',
     'polytics.apps.PolyticsConfig',
+    'reviews.apps.ReviewsConfig',
 ]
 
 MIDDLEWARE = [

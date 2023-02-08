@@ -1,13 +1,14 @@
 import {Routes, Route} from "react-router-dom";
-import Homepage from './pages/home/Homepage';
-import AboutUspage from './pages/aboutus/AboutUsPage';
-import Menupage from './pages/menu/MenuPage';
-import Articlespage from './pages/articles/Articlespage';
-import Articlepage from './pages/article/Articlepage';
-import Bookingpage from './pages/bronirovanie/Bookingpage';
-import Contactspage from './pages/contacts/Contactspage';
-import Polyticspage from './pages/polytics/Polyticspage';
-import Notfoundpage from './pages/notfoundpage/Notfoundpage';
+import HomePage from './pages/home/HomePage';
+import AboutUsPage from './pages/aboutus/AboutUsPage';
+import MenuPage from './pages/menu/MenuPage';
+import ArticlesPage from './pages/articles/ArticlesPage';
+import ArticlePage from './pages/article/ArticlePage';
+import BookingPage from './pages/bronirovanie/BookingPage';
+import ReviewsPage from './pages/reviews/ReviewsPage';
+import ContactsPage from './pages/contacts/ContactsPage';
+import PolyticsPage from './pages/polytics/PolyticsPage';
+import NotfoundPage from './pages/notfoundpage/NotfoundPage';
 import ScrollToTop from './utils/scrollToTop';
 import {Layout} from '././components/base/Layout';
 
@@ -18,16 +19,17 @@ function App() {
         <>
             <ScrollToTop />
             <Routes>
-                    <Route index element={<Homepage />} />
+                    <Route index element={<HomePage />} />
                 <Route path="/" element={<Layout />}>
-                    <Route path="/about" element={<AboutUspage />} />
-                    <Route path="/menu" element={<Menupage />} />
-                    <Route path="/articles" element={<Articlespage />} />
-                    <Route path="articles/:id" element={<Articlepage />} />
-                    <Route path="/booking" element={<Bookingpage />} />
-                    <Route path="/contacts" element={<Contactspage />} />
-                    <Route path="/polytics" element={<Polyticspage />} />
-                    <Route path="*" element={<Notfoundpage />} />
+                    <Route path="/about" element={<AboutUsPage />} />
+                    <Route path="/menu" element={<MenuPage />} />
+                    <Route path="/articles" element={<ArticlesPage />} />
+                    <Route path="articles/:id" element={<ArticlePage />} />
+                    <Route path="/reviews" element={<ReviewsPage />} />
+                    <Route path="/booking" element={<BookingPage />} />
+                    <Route path="/contacts" element={<ContactsPage />} />
+                    <Route path="/polytics" element={<PolyticsPage />} />
+                    <Route path="*" element={<NotfoundPage />} />
                 </Route>
             </Routes>
 

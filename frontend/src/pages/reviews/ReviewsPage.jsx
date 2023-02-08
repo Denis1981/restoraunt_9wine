@@ -1,25 +1,26 @@
 import React from 'react';
 import "./index.css";
-import Articles from '../../components/articles/Articles';
+import Reviews from '../../components/reviews/Reviews';
 
-const Articlespage = () => {
+const ReviewsPage = () => {
 
     return (
         <>
-        <section id="articles">
+        <section id="reviews">
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-12 text-center">
-                        <h1>события и новости <strong>NINEWINES</strong></h1>
+                        <h1>отзывы клиентов <strong>NINEWINES</strong></h1>
                     </div>
                 </div>
                 <div className="row">
-                     <Articles />
+                     <Reviews />
                 </div>
             </div>
         </section>
     </>);
 }
 
-export default Articlespage;
+export default ReviewsPage;
+
 

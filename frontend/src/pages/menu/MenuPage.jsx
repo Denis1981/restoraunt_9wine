@@ -12,7 +12,7 @@ import {
 } from "../../assets";
 import {API_URL_MENUS} from '../../api/constant';
 
-const Menupage = () => {
+const MenuPage = () => {
 
      const [menus, setMenus]=useState([])
      const [loading, setLoading]=useState([false])
@@ -100,4 +100,4 @@ const Menupage = () => {
         </>);
 }
 
-export default Menupage;
+export default MenuPage;

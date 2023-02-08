@@ -4,7 +4,7 @@ import {useState, useEffect} from "react";
 import axios from "axios";
 import "./index.css";
 
-const Bookingpage = () => {
+const BookingPage = () => {
 
 
     return (<>
@@ -21,4 +21,4 @@ const Bookingpage = () => {
     </>);
 }
 
-export default Bookingpage;
+export default BookingPage;

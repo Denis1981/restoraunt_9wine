@@ -4,7 +4,7 @@ import axios from "axios";
 import Article from './Article';
 import {API_URL_ARTICLES} from '../../api/constant';
 
-function ArticlesPage() {
+function Articles() {
     const [articles, setArticles]=useState([])
     const [currentPage, setCurrentPage]=useState(1)
     const [fetching, setFetching]=useState(true)
@@ -50,5 +50,5 @@ function ArticlesPage() {
   )
 }
 
-export default ArticlesPage;
+export default Articles;
 

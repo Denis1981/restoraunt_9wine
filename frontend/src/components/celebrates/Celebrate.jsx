@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Link} from 'react-router-dom';
 
-const Article = ({ articles, loading } ) => {
+const Celebrate = ({ articles, loading } ) => {
 
     if(loading) {
         return (<h2>Загрузка...</h2>)
@@ -27,5 +27,5 @@ const Article = ({ articles, loading } ) => {
     )
 }
 
-export default Article;
+export default Celebrate;
 
