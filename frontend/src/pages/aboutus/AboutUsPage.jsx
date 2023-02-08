@@ -12,6 +12,7 @@ import { image1_about,
          image6_aboutBlock,
          image1_karaokeBlock
 } from "../../assets";
+import {API_URL_SALE} from '../../api/constant';
 
 const AboutUspage = () => {
 
@@ -19,7 +20,7 @@ const AboutUspage = () => {
 
      useEffect(()=>{
         const getSale = async () => {
-            const res = await axios.get('http://127.0.0.1:8000/api/v1/sale/?format=json');
+            const res = await axios.get(API_URL_SALE);
             console.log(res.data);
             setSale(res.data);
         }

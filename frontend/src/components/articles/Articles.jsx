@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import axios from "axios";
 import Article from './Article';
+import {API_URL_ARTICLES} from '../../api/constant';
 
 function ArticlesPage() {
     const [articles, setArticles]=useState([])
@@ -13,7 +14,7 @@ function ArticlesPage() {
         setLoading(false)
         if(fetching) {
             setTimeout(() => {
-                axios.get(`http://127.0.0.1:8000/api/v1/articles/?format=json&page_size=3&page=${currentPage}`)
+                axios.get(API_URL_ARTICLES + `${currentPage}`)
                 .then(res => {
                     setLoading(true);
                     setArticles([...articles, ...res.data.results]);

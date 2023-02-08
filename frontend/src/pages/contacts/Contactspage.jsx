@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import axios from "axios";
 import "./index.css";
 import Map from '../../components/map/Map';
-
+import {API_URL_CONTACTS} from '../../api/constant';
 
 const Contactspage = () => {
 
@@ -11,7 +11,7 @@ const Contactspage = () => {
 
      useEffect(()=>{
         const getContacts = async () => {
-            const res = await axios.get('http://127.0.0.1:8000/api/v1/contacts/?format=json');
+            const res = await axios.get(API_URL_CONTACTS);
             setContacts(res.data);
         }
         getContacts()

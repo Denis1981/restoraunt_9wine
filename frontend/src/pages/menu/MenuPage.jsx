@@ -10,6 +10,7 @@ import {
     menu_menu,
     line_menu
 } from "../../assets";
+import {API_URL_MENUS} from '../../api/constant';
 
 const Menupage = () => {
 
@@ -19,7 +20,7 @@ const Menupage = () => {
      useEffect(()=>{
         const getMenus = async () => {
             setLoading(true);
-            const res = await axios.get('http://127.0.0.1:8000/api/v1/menus/?format=json');
+            const res = await axios.get(API_URL_MENUS);
             console.log(res.data);
             setMenus(res.data);
             setLoading(false);

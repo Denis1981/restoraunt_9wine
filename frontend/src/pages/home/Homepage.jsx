@@ -1,12 +1,22 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
+import axios from "axios";
 import "./index.css";
 import { logoMain, headerUnderLogo, vk, tg} from "../../assets";
-
+import {API_URL_CONTACTS} from '../../api/constant';
 
 
 const Homepage = () => {
 
+    const [contacts, setContacts]=useState([]);
+
+     useEffect(()=>{
+        const getContacts = async () => {
+            const res = await axios.get(API_URL_CONTACTS);
+            setContacts(res.data);
+        }
+        getContacts()
+    }, []);
 
    return (
        <>
@@ -17,7 +27,7 @@ const Homepage = () => {
                         <div className="col-xxl-12 text-center">
                             <img src={logoMain} alt="" title="" className="main__logoMain" />
                             <img src={headerUnderLogo} alt="" title="" className="main__headerUnderLogo" />
-                            <button className="btn main__btn-reserve">забронировать</button>
+                            <Link to="/booking" className="btn main__btn-reserve">забронировать</Link>
                         </div>
                     </div>
                     <div className="row justify-content-center">
@@ -32,12 +42,24 @@ const Homepage = () => {
                                     <li><Link to="/contacts">Контакты</Link></li>
                                 </ul>
                             </div>
-                            <div className="main__social-block">
+                            {
+                                contacts.map((contacts, i) => (
+                            <div className="main__social-block" key={contacts.id}>
                                 <ul className="list-unstyled text-center">
-                                     <li><Link to="https://vk.com/ninewines"><img src={vk} /></Link></li>
-                                     <li><Link to="https://t.me/ninewines"><img src={tg} /></Link></li>
+                                     <li>
+                                         <Link to={contacts.vk} rel="nofollow">
+                                             <img src={vk} />
+                                         </Link>
+                                     </li>
+                                     <li>
+                                         <Link to={contacts.telegram} rel="nofollow">
+                                             <img src={tg} />
+                                         </Link>
+                                     </li>
                                 </ul>
                             </div>
+                                 ))
+                        }
                         </div>
                     </div>
                 </div>

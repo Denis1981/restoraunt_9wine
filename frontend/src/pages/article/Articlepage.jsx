@@ -2,6 +2,7 @@ import React from "react";
 import {useParams, Link, useNavigate} from "react-router-dom";
 import {useState, useEffect} from "react";
 import axios from "axios";
+import {API_URL_ARTICLE} from '../../api/constant';
 import "./index.css";
 
 const Article = () => {
@@ -14,7 +15,7 @@ const Article = () => {
     useEffect(() => {
         const getArticle = async () => {
              setLoading(true);
-             const res = await axios.get(`http://127.0.0.1:8000/api/v1/articles/${id}/?format=json`);
+             const res = await axios.get(API_URL_ARTICLE + `${id}` + '/?format=json');
              setArticle(res.data);
              setLoading(false);
          }
