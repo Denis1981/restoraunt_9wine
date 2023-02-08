@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import axios from "axios";
 import "./index.css";
 import { image1_about,
          image2_about,
-         image1_special,
          image1_aboutBlock,
          image2_aboutBlock,
          image3_aboutBlock,
@@ -13,6 +13,18 @@ import { image1_about,
 } from "../../assets";
 
 const AboutUspage = () => {
+
+    const [sale, setSale]=useState([]);
+
+     useEffect(()=>{
+        const getSale = async () => {
+            const res = await axios.get('http://127.0.0.1:8000/api/v1/sale/?format=json');
+            console.log(res.data);
+            setSale(res.data);
+        }
+        getSale()
+    }, []);
+
     return (
     <>
         <section id="aboutUs">
@@ -33,33 +45,39 @@ const AboutUspage = () => {
                                 <p>Интерьером пространства занимались ребята из легендарного дизайнерского коллектива Broburo.
 Картины, украшающие стены ресторана, были написаны специально для 9wines, а наш стол в виде девятки занимает особое место в центре зала. За ним удобно веселиться большим компаниям, проводить дегустации и наслаждаться царящей вокруг атмосферой гедонизма.</p>
                                <p>А каждую пятницу и субботу в Nine Wines можно потанцевать. Мы привозим талантливых диджеев с популярной тематической музыкой.</p>
-
                            </div>
                        </div>
                    </div>
-
                </div>
-
            </section>
 
            <section id="special">
                 <div className="container">
                     <div className="row">
-                           <div className="col-xxl-6">
-                                <h2>Вино недели</h2>
-                                <p>При заказе бутылки вина недели — сырная тарелка со скидкой 30% филе миньон или копченый лосось с эдамаме со скидкой 20%</p>
-                                <div className="special_notes-wine">
-                                    <p>Вино красное сухое <b>Шато Пойак, 2012</b></p>
-                                    <p>Вино белое сухое <b>Ремордимьенто</b></p>
-                                </div>
-                                <button className="btn btn-more">узнать больше</button>
-                           </div>
-                           <div className="col-xxl-6">
-                               <img src={image1_special} className="special_image1" alt="" title=""/>
-                           </div>
+                        {
+                            sale.map((sale, i) => (
+                               <div className="col-xxl-6">
+                                    <h2>{sale.title}</h2>
+                                    <p dangerouslySetInnerHTML={{ __html: sale.contentSale }}/>
+                                   <div className="special_notes-wine">
+                                        <p><b>{sale.itemSale1}</b></p>
+                                        <p><b>{sale.itemSale2}</b></p>
+                                        <button className="btn btn-more">узнать больше</button>
+                                    </div>
+                               </div>
+                            ))
+                        }
+                        {
+                            sale.map((sale, i) => (
+                               <div className="col-xxl-6 text-center">
+                                    <img src={sale.photo} className="special_image1" alt="" title={sale.itemSale1}/>
+                               </div>
+                            ))
+                        }
                     </div>
                 </div>
            </section>
+
            <section id="aboutBlock">
                <div className="container">
                    <div className="row">
@@ -83,6 +101,7 @@ const AboutUspage = () => {
                    </div>
                </div>
            </section>
+
            <section id="karaokeBlock">
                 <div className="container">
                     <div className="row">

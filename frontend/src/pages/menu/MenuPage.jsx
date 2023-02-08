@@ -17,14 +17,14 @@ const Menupage = () => {
      const [loading, setLoading]=useState([false])
 
      useEffect(()=>{
-        const getArticles = async () => {
+        const getMenus = async () => {
             setLoading(true);
             const res = await axios.get('http://127.0.0.1:8000/api/v1/menus/?format=json');
             console.log(res.data);
             setMenus(res.data);
             setLoading(false);
         }
-        getArticles()
+        getMenus()
     }, [])
 
     return (
