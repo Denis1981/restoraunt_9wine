@@ -24,11 +24,15 @@ const ReservePage = () => {
     <section id="reservePage">
             <div className="container">
                 <div className="row">
-                    <div className="col-xxl-6">
+                    <div className="col-xxl-12 text-center">
+                        <h2>зарезервировать стол</h2>
+                    </div>
+                </div>
+                <div className="row justify-content-md-center">
+                    <div className="col-xxl-7 text-center">
                         {
                             contacts.map((contacts, i) => (
                                <div key={contacts.id}>
-                                    <h2>зарезервировать стол</h2>
                                     <p><b>часы работы</b></p>
                                    <ul className="reservePage__time list-unstyled">
                                         <li>
@@ -63,7 +67,7 @@ const ReservePage = () => {
                             ))
                         }
                     </div>
-                     <div className="col-xxl-6">
+                     <div className="col-xxl-7">
                          <div className="formReserve">
                              <h3>Для того, чтобы забронировать стол в нашем ресторане, заполните форму бронирования</h3>
                              <FormsReserve />

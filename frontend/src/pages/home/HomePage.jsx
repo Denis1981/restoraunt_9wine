@@ -4,6 +4,7 @@ import axios from "axios";
 import "./index.css";
 import { logoMain, headerUnderLogo, vk, tg} from "../../assets";
 import {API_URL_CONTACTS} from '../../api/constant';
+import FormsReserve from '../../components/forms/FormsReserve';
 
 
 const HomePage = () => {
@@ -27,7 +28,7 @@ const HomePage = () => {
                         <div className="col-xxl-12 text-center">
                             <img src={logoMain} alt="" title="" className="main__logoMain" />
                             <img src={headerUnderLogo} alt="" title="" className="main__headerUnderLogo" />
-                            <Link to="/booking" className="btn main__btn-reserve">зарезервировать</Link>
+                            <Link to="" className="btn main__btn-reserve" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать</Link>
                         </div>
                     </div>
                     <div className="row justify-content-center">
@@ -65,13 +66,19 @@ const HomePage = () => {
                 </div>
             </section>
 
-
-
-
-
-
-
-
+            <div className="modal fade" id="reserveModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header text-center">
+                      <h3 className="modal-title fs-5" id="exampleModalLabel">Для того, чтобы забронировать стол в нашем ресторане, заполните форму бронирования</h3>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"/>
+                  </div>
+                  <div className="modal-body">
+                         <FormsReserve />
+                  </div>
+                </div>
+              </div>
+            </div>
     </>
    );
 }

@@ -145,9 +145,9 @@ const AboutUspage = () => {
                      ))
                     }
 
-                      <Link to="/booking">
-                           <button type="button" className="btn btn-more" data-bs-dismiss="modal">зарезервировать стол</button>
-                      </Link>
+
+                           <button type="button" className="btn btn-more"  data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать стол</button>
+
 
                 </div>
               </div>

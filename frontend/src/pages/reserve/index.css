@@ -4,8 +4,9 @@
 
 #reservePage {
     overflow: hidden;
-    background: #F7FAFA;
-    padding: 0 0 55px 0;
+    background: url('../../assets/reserve.webp') no-repeat center;
+    width: 100%;
+    padding: 0 0 10px 0;
     margin: 75px 0 0 0;
 }
 
@@ -15,6 +16,7 @@
     font-weight: 400;
     text-transform: uppercase;
     margin: 20px 0 40px 0;
+    color: #fff;
 }
 
 #reservePage h3 {
@@ -23,10 +25,11 @@
     font-weight: 400;
     margin: 20px 0 40px 0;
     text-align: center;
+    color: #fff;
 }
 
 #reservePage a  {
-    color: #000;
+    color: #fff;
 }
 
 #reservePage a:hover  {
@@ -38,12 +41,14 @@
     font-size: 20px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 300;
+    color: #fff;
 }
 
 #reservePage p > b, #reservePage p > strong {
     text-transform: uppercase;
     font-family: 'OpenSans-Bold',sans-serif;
     font-weight: 400;
+    color: #fff;
 }
 
 #reservePage .reservePage__social-block {
@@ -60,7 +65,18 @@
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+    color: #fff;
 }
+
+#reservePage .blockForm {
+    background: #F7FAFA;
+}
+
+#reservePage .formReserve {
+
+}
+
+
 
 
 

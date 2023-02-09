@@ -54,7 +54,7 @@ const Navbar = () => {
                             <CustomLink className="nav-link" to="/contacts">Контакты</CustomLink>
                         </li>
                        <li className="nav-item">
-                         <CustomLink className="nav-link" to="/booking">Зарезервировать</CustomLink>
+                         <CustomLink className="nav-link" to="" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">Зарезервировать</CustomLink>
                         </li>
                     </ul>
                     <p>

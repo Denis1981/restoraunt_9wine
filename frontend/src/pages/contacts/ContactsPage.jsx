@@ -20,7 +20,7 @@ const ContactsPage = () => {
     return (
     <>
         <section id="contactsPage">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
                     <div className="col-xxl-4">
                         {
