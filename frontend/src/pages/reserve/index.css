@@ -1,0 +1,66 @@
+/**
+* ReservePage
+**/
+
+#reservePage {
+    overflow: hidden;
+    background: #F7FAFA;
+    padding: 0 0 55px 0;
+    margin: 75px 0 0 0;
+}
+
+#reservePage h2 {
+    font-size: 28px;
+    font-family: 'OpenSans-Bold',sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0 40px 0;
+}
+
+#reservePage h3 {
+    font-size: 28px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+#reservePage a  {
+    color: #000;
+}
+
+#reservePage a:hover  {
+    transition: all .5s;
+    color: #FF8700 !important;
+}
+
+#reservePage p  {
+    font-size: 20px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 300;
+}
+
+#reservePage p > b, #reservePage p > strong {
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold',sans-serif;
+    font-weight: 400;
+}
+
+#reservePage .reservePage__social-block {
+    margin: 20px 0;
+}
+
+#reservePage .reservePage__social-block ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#reservePage ul.reservePage__time > li{
+    font-size: 20px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+

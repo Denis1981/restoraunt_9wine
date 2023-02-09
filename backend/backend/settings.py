@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'sale.apps.SaleConfig',
     'polytics.apps.PolyticsConfig',
     'reviews.apps.ReviewsConfig',
+    'forms.apps.FormsConfig',
 ]
 
 MIDDLEWARE = [

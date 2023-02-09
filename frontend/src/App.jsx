@@ -4,7 +4,7 @@ import AboutUsPage from './pages/aboutus/AboutUsPage';
 import MenuPage from './pages/menu/MenuPage';
 import ArticlesPage from './pages/articles/ArticlesPage';
 import ArticlePage from './pages/article/ArticlePage';
-import BookingPage from './pages/bronirovanie/BookingPage';
+import ReservePage from './pages/reserve/ReservePage';
 import ReviewsPage from './pages/reviews/ReviewsPage';
 import ContactsPage from './pages/contacts/ContactsPage';
 import PolyticsPage from './pages/polytics/PolyticsPage';
@@ -26,7 +26,7 @@ function App() {
                     <Route path="/articles" element={<ArticlesPage />} />
                     <Route path="articles/:id" element={<ArticlePage />} />
                     <Route path="/reviews" element={<ReviewsPage />} />
-                    <Route path="/booking" element={<BookingPage />} />
+                    <Route path="/booking" element={<ReservePage />} />
                     <Route path="/contacts" element={<ContactsPage />} />
                     <Route path="/polytics" element={<PolyticsPage />} />
                     <Route path="*" element={<NotfoundPage />} />

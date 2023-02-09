@@ -8,6 +8,7 @@ from articles.views import *
 from menus.views import *
 from reviews.views import *
 from polytics.views import *
+from forms.views import *
 from contacts.views import *
 from rest_framework import routers
 
@@ -16,13 +17,14 @@ router.register(r'sale', SaleViewSet )
 router.register(r'articles', ArticleViewSet )
 router.register(r'menus', MenusViewSet )
 router.register(r'reviews', ReviewsViewSet )
+router.register(r'reserve', FormsReserveViewSet )
 router.register(r'polytics', PolyticsViewSet )
 router.register(r'contacts', ContactsViewSet )
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include(router.urls)), # http://127.0.0.1:8000/api/v1/articles/
+    path('api/v1/', include(router.urls)), # http://127.0.0.1:8000/api/v1/
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
