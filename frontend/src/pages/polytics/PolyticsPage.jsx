@@ -3,7 +3,7 @@ import axios from "axios";
 import "./index.css";
 import {API_URL_POLYTICS} from '../../api/constant';
 
-const Polyticspage = () => {
+const PolyticSpage = () => {
 
     const [polytics, setPolytics]=useState([]);
 
@@ -17,7 +17,7 @@ const Polyticspage = () => {
 
     return (<>
 
-    <section id="polytics">
+    <section id="PolyticSpage">
         <div className="container">
             <div className="row">
                 <div className="col-xxl-8">
@@ -39,4 +39,4 @@ const Polyticspage = () => {
     </>);
 }
 
-export default Polyticspage;
+export default PolyticSpage;

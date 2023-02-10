@@ -29,21 +29,21 @@ const AboutUspage = () => {
 
     return (
     <>
-        <section id="aboutUs">
+        <section id="AboutUs">
                <div className="container">
                    <div className="row">
                        <div className="col-xxl-7">
-                           <div className="aboutUs__block">
+                           <div className="AboutUs__block">
                                 <h1>Винный ресторан NineWines - это частичка Европы, Нового Света, Кавказа и Крыма в Санкт-Петербурге.</h1>
                                 <p>Ресторан, в котором собраны отборные вина из разных регионов мира от бутиковых производителей Европы, Нового света, Кавказа и Крыма.</p>
                                 <p>Винная карта ресторана очень динамична, составляется собственником ресторана и постоянно обновляется его интересными находками, собранными в разных уголках света. Мы сами привозим эти вина, что позволяет предлагать их нашим дорогим гостям по стоимости, соизмеримой с ценой чашки капучино. А наш Шеф повар создал меню, которое служит идеальным гастрономическим сопровождением к винам, представленным в ассортименте ресторана.</p>
-                                <img src={image1_about} alt="" title="" className="aboutUs_image1" />
+                                <img src={image1_about} alt="" title="" className="AboutUs_image1" />
                            </div>
                        </div>
                        <div className="col-xxl-1" />
                        <div className="col-xxl-4">
-                           <div className="aboutUs__block">
-                                <img src={image2_about} alt="" title="" className="aboutUs_image2" />
+                           <div className="AboutUs__block">
+                                <img src={image2_about} alt="" title="" className="AboutUs_image2" />
                                 <p>Интерьером пространства занимались ребята из легендарного дизайнерского коллектива Broburo.
 Картины, украшающие стены ресторана, были написаны специально для 9wines, а наш стол в виде девятки занимает особое место в центре зала. За ним удобно веселиться большим компаниям, проводить дегустации и наслаждаться царящей вокруг атмосферой гедонизма.</p>
                                <p>А каждую пятницу и субботу в Nine Wines можно потанцевать. Мы привозим талантливых диджеев с популярной тематической музыкой.</p>
@@ -64,7 +64,7 @@ const AboutUspage = () => {
                                    <div className="special_notes-wine">
                                         <p><b>{sale.itemSale1}</b></p>
                                         <p><b>{sale.itemSale2}</b></p>
-                                        <button className="btn btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop">узнать больше</button>
+                                        <button className="btn special__btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop">узнать больше</button>
                                     </div>
                                </div>
                             ))
@@ -72,7 +72,7 @@ const AboutUspage = () => {
                         {
                             sale.map((sale, i) => (
                                <div className="col-xxl-6 text-center" key={sale.id}>
-                                    <img src={sale.photo} className="special_image1" alt="" title={sale.itemSale1}/>
+                                    <img src={sale.photo} className="special__special_image1" alt="" title={sale.itemSale1}/>
                                </div>
                             ))
                         }
@@ -120,8 +120,7 @@ const AboutUspage = () => {
                                 Наша атмосфера располагает к комфортному отдыху — современный стильный интерьер, отменное вино, прекрасная аппаратура! А новичкам и тем, кому нужна компания, помогают звукорежиссер и бэк-вокалисты. В перерывах между выступлениями гостей свою музыку презентуют модные ди-джеи.
                             </p>
 
-                                <button className="btn btn-more" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">узнать больше</button>
-
+                                <button className="btn karaokeBlock__btn-more" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">узнать больше</button>
                         </div>
                         <div className="col-xxl-6">
                             <img src={image1_karaokeBlock} className="karaokeBlock__image" alt="" title="" />

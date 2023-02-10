@@ -6,7 +6,7 @@ const ReviewsPage = () => {
 
     return (
         <>
-        <section id="reviews">
+        <section id="ReviewsPage">
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-12 text-center">

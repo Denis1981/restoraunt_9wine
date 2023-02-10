@@ -28,8 +28,7 @@ const ArticlePage = () => {
 
     return (
         <>
-        <section id="article">
-
+        <section id="ArticlePage">
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-12">
@@ -40,8 +39,8 @@ const ArticlePage = () => {
                     <div className="col-xxl-12">
                         {article && (
                         <>
-                            <p className="article__text-content-article" dangerouslySetInnerHTML={{ __html: article.content }} />
-                            <button className="btn btn_article__goback" onClick={goBack}>назад</button>
+                            <p className="ArticlePage__text-content-article" dangerouslySetInnerHTML={{ __html: article.content }} />
+                            <button className="btn btn_ArticlePage__goback" onClick={goBack}>назад</button>
                         </>
                     )}
                     </div>
@@ -49,7 +48,7 @@ const ArticlePage = () => {
             </div>
         </section>
     </>);
-}
+};
 
 export default ArticlePage;
 

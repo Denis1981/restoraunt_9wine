@@ -1,15 +1,15 @@
 /**
-* Articles
+* ArticlesPage
  **/
 
-#articles {
+#ArticlesPage {
      overflow: hidden;
      margin: 75px 0 0 0;
      padding: 0 0 40px 0;
      background: #F7FAFA;
 }
 
-#articles h1 {
+#ArticlesPage h1 {
     font-size: 38px;
     font-family: 'OpenSans-Light',sans-serif;
     font-weight: 600;
@@ -17,50 +17,54 @@
     text-transform: uppercase;
 }
 
-#articles h2 {
+#ArticlesPage h2 {
     font-size: 20px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
     margin: 0 0 40px 0;
 }
 
-#articles h2:hover {
+#ArticlesPage h2:hover {
      transition: all .5s;
      color: #FF8700 !important;
 }
 
-#articles .card {
+/*
+эскизы страниц
+*/
+
+#ArticlesPage .card {
      min-height: 450px;
      margin: 12px 0;
-     border: none;
+     border: none !important;
 }
 
-#articles .card-body {
+#ArticlesPage .card-body {
      background: #F7CBA8;
-     border-bottom-left-radius: 15px;
-     border-bottom-right-radius: 15px;
+     border-bottom-left-radius: 15px !important;
+     border-bottom-right-radius: 15px !important;
 }
 
-#articles .card p{
+#ArticlesPage .card p{
     text-align: right;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
 }
 
-#articles .card p:hover{
+#ArticlesPage .card p:hover{
     transition: all .5s;
     color: #AB0508 !important;
 }
 
-#articles .card a{
+#ArticlesPage .card a{
      color: #000 !important;
      font-family: 'OpenSans-Regular',sans-serif;
 }
 
-#articles .card-img-top {
+#ArticlesPage .card-img-top {
      width: 100%;
      height: 300px;
-     border-top-left-radius: 15px;
-     border-top-right-radius: 15px;
+     border-top-left-radius: 15px !important;
+     border-top-right-radius: 15px !important;
 }
 

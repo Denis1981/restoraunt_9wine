@@ -2,14 +2,14 @@
 * ContactsPage
 **/
 
-#contactsPage {
+#ContactsPage {
     overflow: hidden;
     background: #F7FAFA;
     padding: 0 0;
     margin: 75px 0 0 0;
 }
 
-#contactsPage h2 {
+#ContactsPage h2 {
     font-size: 28px;
     font-family: 'OpenSans-Bold',sans-serif;
     font-weight: 400;
@@ -17,37 +17,37 @@
     margin: 20px 0 40px 0;
 }
 
-#contactsPage a  {
+#ContactsPage a  {
     color: #000;
 }
 
-#contactsPage a:hover  {
+#ContactsPage a:hover  {
     transition: all .5s;
     color: #FF8700 !important;
 }
 
-#contactsPage p  {
+#ContactsPage p  {
     font-size: 20px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 300;
 }
 
-#contactsPage p > b, #contactsPage p > strong {
+#ContactsPage p > b, #ContactsPage p > strong {
     text-transform: uppercase;
     font-family: 'OpenSans-Bold',sans-serif;
     font-weight: 400;
 }
 
-#contactsPage .contactsPage__social-block {
+#ContactsPage .ContactsPage__social-block {
     margin: 20px 0;
 }
 
-#contactsPage .contactsPage__social-block ul li{
+#ContactsPage .ContactsPage__social-block ul li{
     display: inline-block;
     padding: 0 10px;
 }
 
-#contactsPage ul.contactsPage__time > li{
+#ContactsPage ul.ContactsPage__time > li{
     font-size: 20px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 300;

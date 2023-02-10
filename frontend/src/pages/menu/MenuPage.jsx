@@ -30,22 +30,22 @@ const MenuPage = () => {
 
     return (
         <>
-        <section id="menu">
+        <section id="MenuPage">
             <div className="container">
                <div className="row">
                    <div className="col-xxl-12">
-                       <img src={photo_menu} className="menu__photo_menu" alt="" title="" />
+                       <img src={photo_menu} className="MenuPage__photo_menu" alt="" title="" />
                    </div>
                </div>
-               <div className="row menu__wine_menu">
+               <div className="row MenuPage__wine_menu">
                    <div className="col-xxl-5 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                    <div className="col-xxl-2 text-center">
                        <h2>wine</h2>
                    </div>
                    <div className="col-xxl-4 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                     <div className="col-xxl-12">
                         {
@@ -60,44 +60,42 @@ const MenuPage = () => {
                         }
                     </div>
                </div>
-                <div className="row menu__winebar_menu">
+                <div className="row MenuPage__winebar_menu">
                    <div className="col-xxl-5 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                    <div className="col-xxl-2 text-center">
                        <h2>wine & bar</h2>
                    </div>
                    <div className="col-xxl-5 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                </div>
-                <div className="row menu__bar_menu">
+                <div className="row MenuPage__bar_menu">
                    <div className="col-xxl-5 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                    <div className="col-xxl-2 text-center">
                        <h2>bar</h2>
                    </div>
                    <div className="col-xxl-5 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                </div>
-                <div className="row menu__menu_menu">
+                <div className="row MenuPage__menu_menu">
                    <div className="col-xxl-5 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                    <div className="col-xxl-2 text-center">
                        <h2>menu</h2>
                    </div>
                    <div className="col-xxl-5 text-center">
-                       <img src={line_menu} className="menu__photo_item"/>
+                       <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
                </div>
-
-
             </div>
         </section>
         </>);
-}
+};
 
 export default MenuPage;

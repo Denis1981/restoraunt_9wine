@@ -1,8 +1,8 @@
 /**
-* Main
+* HomePage
  **/
 
-#main {
+#HomePage {
     overflow: hidden;
     background: url('../../assets/mainblock.webp') no-repeat center;
     width: 100%;
@@ -11,13 +11,13 @@
     /*border: 10px solid #FF8700;*/
 }
 
-#main h1 {
+#HomePage h1 {
     font-size: 18px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
 }
 
-#main .main__logoMain {
+#HomePage .HomePage__logoMain {
     width: 100%;
     height:150px;
     margin: 180px auto 0 auto;
@@ -25,7 +25,7 @@
 
 }
 
-#main .main__headerUnderLogo {
+#HomePage .HomePage__headerUnderLogo {
     width: 400px;
     height: 60px;
     margin: 20px auto 0 auto;
@@ -33,7 +33,7 @@
 
 }
 
-#main a.main__btn-reserve {
+#HomePage a.HomePage__btn-reserve {
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
@@ -42,7 +42,7 @@
     line-height: 55px;
 }
 
-#main .main__btn-reserve {
+#HomePage .HomePage__btn-reserve {
     width: 300px;
     height: 70px;
     border: 2px solid #fff;
@@ -50,26 +50,26 @@
     margin: 50px 0 0 0;
 }
 
-#main a.main__btn-reserve:hover {
+#HomePage a.HomePage__btn-reserve:hover {
    line-height: 55px;
 }
 
-#main .main__btn-reserve:hover {
+#HomePage .HomePage__btn-reserve:hover {
     transition: all .5s;
     background: #AB0508 !important;
     border: none;
 }
 
-#main .main__menu-block {
+#HomePage .HomePage__menu-block {
     margin: 50px 0;
 }
 
-#main .main__menu-block ul li{
+#HomePage .HomePage__menu-block ul li{
     display: inline-block;
     padding: 0 10px;
 }
 
-#main .main__menu-block ul li a {
+#HomePage .HomePage__menu-block ul li a {
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
@@ -78,21 +78,21 @@
 }
 
 
-#main .main__menu-block ul li a:hover {
+#HomePage .HomePage__menu-block ul li a:hover {
     transition: all .5s;
     color: #FF8700 !important;
 }
 
-#main .main__social-block {
+#HomePage .HomePage__social-block {
     margin: 20px 0;
 }
 
-#main .main__social-block img{
+#HomePage .HomePage__social-block img{
     width: 40px;
     height: 40px;
 }
 
-#main .main__social-block ul li{
+#HomePage .HomePage__social-block ul li{
     display: inline-block;
     padding: 0 10px;
 }

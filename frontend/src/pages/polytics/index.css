@@ -1,15 +1,15 @@
 /**
-* PolyticsPage
+* PolyticSpage
 **/
 
-#polytics {
+#PolyticSpage {
     overflow: hidden;
     background: #F7FAFA;
     padding: 40px 0;
     margin: 75px 0 0 0;
 }
 
-#polytics h2 {
+#PolyticSpage h2 {
     font-size: 28px;
     font-family: 'OpenSans-Bold',sans-serif;
     font-weight: 400;
@@ -19,7 +19,7 @@
 
 }
 
-#polytics p  {
+#PolyticSpage p  {
     font-size: 20px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 300;

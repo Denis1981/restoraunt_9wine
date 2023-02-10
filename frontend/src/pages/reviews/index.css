@@ -1,14 +1,14 @@
 /**
-* Reviews
+* ReviewsPage
  **/
 
-#reviews {
+#ReviewsPage {
      overflow: hidden;
      margin: 100px 0 0 0;
      padding: 0 0 40px 0;
 }
 
-#reviews h1 {
+#ReviewsPage h1 {
     font-size: 38px;
     font-family: 'OpenSans-Light',sans-serif;
     font-weight: 600;
@@ -16,23 +16,54 @@
     text-transform: uppercase;
 }
 
-#reviews h3 {
+#ReviewsPage h3 {
     font-size: 28px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
     margin: 10px 0 20px 0;
 }
 
-#reviews p{
+#ReviewsPage p{
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
-#reviews .reviews__photo {
+#ReviewsPage .reviews__photo {
     width: 100%;
     height: 280px;
-    margin: 0 -12px 0 -12px;
+    margin: 0 -20px 0 0 !important;
+}
 
+/*
+эскизы страниц
+*/
+
+#ReviewsPage .card {
+     min-height: 300px;
+     border: none !important;
+}
+
+#ReviewsPage .card-body {
+     background: #F7CBA8;
+     min-height: 300px;
+     margin: 0 0 0 -25px;
+}
+
+#ReviewsPage .card p{
+    text-align: right;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+}
+
+#ReviewsPage .card a{
+     color: #000 !important;
+     font-family: 'OpenSans-Regular',sans-serif;
+}
+
+#ReviewsPage .reviews__photo {
+     width: 100%;
+     height: 300px;
+     margin: 0 -15px 0 0;
 }
 

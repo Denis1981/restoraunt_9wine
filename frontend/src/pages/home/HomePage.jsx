@@ -6,7 +6,6 @@ import { logoMain, headerUnderLogo, vk, tg} from "../../assets";
 import {API_URL_CONTACTS} from '../../api/constant';
 import FormsReserve from '../../components/forms/FormsReserve';
 
-
 const HomePage = () => {
 
     const [contacts, setContacts]=useState([]);
@@ -21,19 +20,18 @@ const HomePage = () => {
 
    return (
        <>
-
-            <section id="main">
+            <section id="HomePage">
                 <div className="container">
                     <div className="row">
                         <div className="col-xxl-12 text-center">
-                            <img src={logoMain} alt="" title="" className="main__logoMain" />
-                            <img src={headerUnderLogo} alt="" title="" className="main__headerUnderLogo" />
-                            <Link to="" className="btn main__btn-reserve" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать</Link>
+                            <img src={logoMain} alt="" title="" className="HomePage__logoMain" />
+                            <img src={headerUnderLogo} alt="" title="" className="HomePage__headerUnderLogo" />
+                            <Link to="" className="btn HomePage__btn-reserve" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать</Link>
                         </div>
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-xxl-12">
-                            <div className="main__menu-block">
+                            <div className="HomePage__menu-block">
                                 <ul className="list-unstyled text-center">
                                     <li><Link to="/menu">Меню</Link></li>
                                     <li><Link to="/about">О нас</Link></li>
@@ -45,7 +43,7 @@ const HomePage = () => {
                             </div>
                             {
                                 contacts.map((contacts, i) => (
-                            <div className="main__social-block" key={contacts.id}>
+                            <div className="HomePage__social-block" key={contacts.id}>
                                 <ul className="list-unstyled text-center">
                                      <li>
                                          <Link to={contacts.vk} rel="nofollow">
@@ -81,6 +79,6 @@ const HomePage = () => {
             </div>
     </>
    );
-}
+};
 
 export default HomePage;

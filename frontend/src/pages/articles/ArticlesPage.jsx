@@ -6,7 +6,7 @@ const ArticlesPage = () => {
 
     return (
         <>
-        <section id="articles">
+        <section id="ArticlesPage">
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-12 text-center">

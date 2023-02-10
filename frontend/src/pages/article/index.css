@@ -2,14 +2,14 @@
 * Article
  **/
 
-#article {
+#ArticlePage {
      overflow: hidden;
      margin: 75px 0 0 0;
      padding: 0 0 40px 0;
      background: #F7FAFA;
 }
 
-#article h1 {
+#ArticlePage h1 {
     font-size: 38px;
     font-family: 'OpenSans-Light',sans-serif;
     font-weight: 600;
@@ -17,25 +17,25 @@
     text-transform: uppercase;
 }
 
-#article h2 {
+#ArticlePage h2 {
     font-size: 20px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
     margin: 0 0 40px 0;
 }
 
-#article .article__image-top-article {
+#ArticlePage .ArticlePage__image-top-article {
      width: 100%;
      height: 300px;
      margin: 0 0 40px 0;
 }
 
-#article .article__text-content-article {
+#ArticlePage .ArticlePage__text-content-article {
      font-family: 'OpenSans-Regular',sans-serif;
      font-size: 18px;
 }
 
-#article .btn_article__goback {
+#ArticlePage .btn_ArticlePage__goback {
     width: 200px;
     height: 50px;
     border: 2px solid #AB0508;
@@ -48,7 +48,7 @@
     margin: 5px 0 0 0;
 }
 
-#article .btn_article__goback:hover {
+#ArticlePage .btn_ArticlePage__goback:hover {
     transition: all .5s;
     background: #AB0508 !important;
     border: none;

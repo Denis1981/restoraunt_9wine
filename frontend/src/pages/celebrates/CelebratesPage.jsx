@@ -1,12 +1,12 @@
 import React from 'react';
 import "./index.css";
-import Celebrates from '../../components/celebrates/Celebrates';
+
 
 const CelebratesPage = () => {
 
     return (
         <>
-        <section id="celebrates">
+        <section id="CelebratesPage">
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-12 text-center">
@@ -14,7 +14,7 @@ const CelebratesPage = () => {
                     </div>
                 </div>
                 <div className="row">
-                     <Celebrates />
+
                 </div>
             </div>
         </section>

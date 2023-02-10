@@ -19,7 +19,7 @@ const ContactsPage = () => {
 
     return (
     <>
-        <section id="contactsPage">
+        <section id="ContactsPage">
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-4">
@@ -28,7 +28,7 @@ const ContactsPage = () => {
                                <div key={contacts.id}>
                                     <h2><b>контакты</b></h2>
                                     <p><b>часы работы</b></p>
-                                   <ul className="contactsPage__time list-unstyled">
+                                   <ul className="ContactsPage__time list-unstyled">
                                         <li>
                                             {contacts.time1}
                                         </li>
@@ -43,7 +43,7 @@ const ContactsPage = () => {
                                     <p><a href={`tel: ${contacts.phone}`}>{contacts.phone}</a></p>
                                     <p><a href="{`mailto: ${contacts.mail}`}">{contacts.mail}</a></p>
                                     <p dangerouslySetInnerHTML={{ __html: contacts.content}}/>
-                                    <div className="contactsPage__social-block">
+                                    <div className="ContactsPage__social-block">
                                         <ul className="list-unstyled">
                                              <li>
                                                  <Link to={contacts.vk} rel="nofollow">
