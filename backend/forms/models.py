@@ -35,3 +35,42 @@ class FormsCall(models.Model):
     class Meta:
         verbose_name = 'Заявка на звонок'
         verbose_name_plural = 'Заявки на звонки'
+
+class FormsReserveDegustation(models.Model):
+    title = models.CharField(max_length=150, verbose_name='Имя клиента')
+    phone = models.CharField(max_length=150, verbose_name='Телефон')
+    dateReserve = models.CharField(max_length=150, verbose_name='Желаемая дата')
+    timeReserve = models.CharField(max_length=150, verbose_name='Желаемое время')
+    quantity = models.CharField(max_length=150, verbose_name='Количество гостей')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата заказа')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата обновления заказа')
+
+    def get_absolute_url(self):
+        return reverse('degustation', kwargs={"pk": self.pk})
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Заявка на дегустацию'
+        verbose_name_plural = 'Заявки на дегустации'
+
+class FormsReserveHappy(models.Model):
+    title = models.CharField(max_length=150, verbose_name='Имя клиента')
+    phone = models.CharField(max_length=150, verbose_name='Телефон')
+    dateReserve = models.CharField(max_length=150, verbose_name='Желаемая дата')
+    timeReserve = models.CharField(max_length=150, verbose_name='Желаемое время')
+    quantity = models.CharField(max_length=150, verbose_name='Количество гостей')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата заказа')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата обновления заказа')
+
+    def get_absolute_url(self):
+        return reverse('happy', kwargs={"pk": self.pk})
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Заявка на празднование дня рождения'
+        verbose_name_plural = 'Заявки на празднование дня рождения'
+

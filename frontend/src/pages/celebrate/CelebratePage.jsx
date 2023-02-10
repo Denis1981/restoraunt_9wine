@@ -2,7 +2,7 @@ import React from "react";
 import {useParams, Link, useNavigate} from "react-router-dom";
 import {useState, useEffect} from "react";
 import axios from "axios";
-import {API_URL_ARTICLE} from '../../api/constant';
+import {API_URL_CELEBRATE} from '../../api/constant';
 import "./index.css";
 
 const CelebratePage = () => {
@@ -15,7 +15,7 @@ const CelebratePage = () => {
     useEffect(() => {
         const getArticle = async () => {
              setLoading(true);
-             const res = await axios.get(API_URL_ARTICLE + `${id}` + '/?format=json');
+             const res = await axios.get(API_URL_CELEBRATE + `${id}` + '/?format=json');
              setArticle(res.data);
              setLoading(false);
          }

@@ -1,20 +1,20 @@
 import React from 'react';
 import "./index.css";
-import Articles from '../../components/articles/Articles';
+import Celebrates from '../../components/celebrates/Celebrates';
 
 const CelebratesPage = () => {
 
     return (
         <>
-        <section id="articles">
+        <section id="celebrates">
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-12 text-center">
-                        <h1>события и новости <strong>NINEWINES</strong></h1>
+                        <h1>мероприятия NineWines</h1>
                     </div>
                 </div>
                 <div className="row">
-                     <Articles />
+                     <Celebrates />
                 </div>
             </div>
         </section>

@@ -1,0 +1,65 @@
+/**
+* Celebrates
+ **/
+
+#celebrates {
+     overflow: hidden;
+     margin: 75px 0 0 0;
+     padding: 0 0 40px 0;
+     background: #F7FAFA;
+}
+
+#celebrates h1 {
+    font-size: 38px;
+    font-family: 'OpenSans-Light',sans-serif;
+    font-weight: 600;
+    margin: 40px 0 40px 0;
+    text-transform: uppercase;
+}
+
+#celebrates h2 {
+    font-size: 20px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+#celebrates h2:hover {
+     transition: all .5s;
+     color: #FF8700 !important;
+}
+
+#celebrates .card {
+     min-height: 450px;
+     margin: 12px 0;
+     border: none;
+}
+
+#celebrates .card-body {
+     background: #F7CBA8;
+     border-bottom-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+}
+
+#celebrates .card p{
+    text-align: right;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 400;
+}
+
+#celebrates .card p:hover{
+    transition: all .5s;
+    color: #AB0508 !important;
+}
+
+#celebrates .card a{
+     color: #000 !important;
+     font-family: 'OpenSans-Regular',sans-serif;
+}
+
+#celebrates .card-img-top {
+     width: 100%;
+     height: 300px;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+}

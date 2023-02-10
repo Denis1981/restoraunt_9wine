@@ -9,6 +9,7 @@ from menus.views import *
 from reviews.views import *
 from polytics.views import *
 from forms.views import *
+from events.views import *
 from contacts.views import *
 from rest_framework import routers
 
@@ -19,6 +20,9 @@ router.register(r'menus', MenusViewSet )
 router.register(r'reviews', ReviewsViewSet )
 router.register(r'reserve', FormsReserveViewSet )
 router.register(r'call', FormsCallViewSet )
+router.register(r'events', EventsViewSet )
+router.register(r'degustation', FormsReserveDegustationViewSet )
+router.register(r'happy', FormsReserveHappyViewSet )
 router.register(r'polytics', PolyticsViewSet )
 router.register(r'contacts', ContactsViewSet )
 

@@ -2,10 +2,10 @@ import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import axios from "axios";
 import Celebrate from './Celebrate';
-import {API_URL_ARTICLES} from '../../api/constant';
+import {API_URL_CELEBRATES} from '../../api/constant';
 
 function Celebrates() {
-    const [articles, setArticles]=useState([])
+    const [celebrates, setCelebrates]=useState([])
     const [currentPage, setCurrentPage]=useState(1)
     const [fetching, setFetching]=useState(true)
     const [loading, setLoading]=useState([false])
@@ -14,10 +14,10 @@ function Celebrates() {
         setLoading(false)
         if(fetching) {
             setTimeout(() => {
-                axios.get(API_URL_ARTICLES + `${currentPage}`)
+                axios.get(API_URL_CELEBRATES + `${currentPage}`)
                 .then(res => {
                     setLoading(true);
-                    setArticles([...articles, ...res.data.results]);
+                    setCelebrates([...celebrates, ...res.data.results]);
                     setCurrentPage(prevState => prevState + 1);
                     setLoading(false);
                 })
@@ -45,10 +45,10 @@ function Celebrates() {
 
     return (
       <>
-          <Article articles={articles}/>
+          <Celebrate celebrates={celebrates}/>
       </>
   )
 }
 
-export default CelebratesPage;
+export default Celebrates;
 

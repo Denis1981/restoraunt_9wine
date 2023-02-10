@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'polytics.apps.PolyticsConfig',
     'reviews.apps.ReviewsConfig',
     'forms.apps.FormsConfig',
+    'events.apps.EventsConfig',
 ]
 
 MIDDLEWARE = [

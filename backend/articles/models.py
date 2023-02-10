@@ -39,7 +39,7 @@ class Articles(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата обновления')
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/', verbose_name='Изображение', blank=True)
-    is_published = models.BooleanField(default=True, verbose_name='Дата публикации')
+    is_published = models.BooleanField(default=True, verbose_name='Опубликовано да/нет')
     author = models.CharField(max_length=100, verbose_name='Автор публикации')
     keywords = models.CharField(max_length=350, verbose_name='Ключи для SEO')
     description = models.TextField(max_length=350, verbose_name='Описание для SEO')
