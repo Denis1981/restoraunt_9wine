@@ -18,6 +18,7 @@ router.register(r'articles', ArticleViewSet )
 router.register(r'menus', MenusViewSet )
 router.register(r'reviews', ReviewsViewSet )
 router.register(r'reserve', FormsReserveViewSet )
+router.register(r'call', FormsCallViewSet )
 router.register(r'polytics', PolyticsViewSet )
 router.register(r'contacts', ContactsViewSet )
 

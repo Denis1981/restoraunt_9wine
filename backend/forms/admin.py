@@ -20,4 +20,23 @@ class FormsReserveAdmin(admin.ModelAdmin):
     save_as = True
     save_on_top = True
 
+class FormsCallAdminForm(forms.ModelForm):
+
+    class Meta:
+        model = FormsCall
+        fields = '__all__'
+
+
+class FormsCallAdmin(admin.ModelAdmin):
+
+    form = FormsReserveAdminForm
+    list_display = ('id', 'title', 'phone')
+    list_display_links = ('id', 'title')
+    search_fields = ('title',)
+    readonly_fields = ('created_at', 'updated_at')
+    fields = ('title', 'phone',)
+    save_as = True
+    save_on_top = True
+
 admin.site.register(FormsReserve, FormsReserveAdmin)
+admin.site.register(FormsCall, FormsCallAdmin)

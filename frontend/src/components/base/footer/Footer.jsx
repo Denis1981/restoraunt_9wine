@@ -6,7 +6,7 @@ import { logoFooter } from ".././././../../assets";
 import { footer } from ".././././../../constants";
 import {API_URL_CONTACTS} from '.././././../../api/constant';
 import FormsReserve from '../../../components/forms/FormsReserve';
-
+import FormsCall from '../../../components/forms/FormsCall';
 
 const Footer = () => {
 
@@ -71,7 +71,21 @@ const Footer = () => {
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"/>
                   </div>
                   <div className="modal-body">
-                         <FormsReserve />
+                     <FormsReserve />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="modal fade" id="callModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header text-center">
+                      <h3 className="modal-title fs-5" id="exampleModalLabel">Введите свои данные и мы перезвоним вам в течение 10 минут</h3>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"/>
+                  </div>
+                  <div className="modal-body">
+                     <FormsCall />
                   </div>
                 </div>
               </div>

@@ -8,6 +8,7 @@ const API_URL_CELEBRATES = 'http://127.0.0.1:8000/api/v1/celebrates/?format=json
 const API_URL_CELEBRATE = 'http://127.0.0.1:8000/api/v1/celebrates/';
 const API_URL_POLYTICS = 'http://127.0.0.1:8000/api/v1/polytics/?format=json';
 const API_URL_CREATE_RESERVE = 'http://127.0.0.1:8000/api/v1/reserve/';
+const API_URL_CREATE_CALL = 'http://127.0.0.1:8000/api/v1/call/';
 
 export {
     API_URL_ARTICLES,
@@ -20,4 +21,5 @@ export {
     API_URL_CELEBRATE,
     API_URL_POLYTICS,
     API_URL_CREATE_RESERVE,
+    API_URL_CREATE_CALL,
 }

@@ -21,7 +21,7 @@ const AboutUspage = () => {
      useEffect(()=>{
         const getSale = async () => {
             const res = await axios.get(API_URL_SALE);
-            console.log(res.data);
+            // console.log(res.data);
             setSale(res.data);
         }
         getSale()
@@ -119,9 +119,9 @@ const AboutUspage = () => {
                             <p>
                                 Наша атмосфера располагает к комфортному отдыху — современный стильный интерьер, отменное вино, прекрасная аппаратура! А новичкам и тем, кому нужна компания, помогают звукорежиссер и бэк-вокалисты. В перерывах между выступлениями гостей свою музыку презентуют модные ди-джеи.
                             </p>
-                            <Link to="/booking">
-                                <button className="btn btn-more">узнать больше</button>
-                            </Link>
+
+                                <button className="btn btn-more" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">узнать больше</button>
+
                         </div>
                         <div className="col-xxl-6">
                             <img src={image1_karaokeBlock} className="karaokeBlock__image" alt="" title="" />
@@ -144,11 +144,7 @@ const AboutUspage = () => {
                       </div>
                      ))
                     }
-
-
-                           <button type="button" className="btn btn-more"  data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать стол</button>
-
-
+                      <button type="button" className="btn btn-more"  data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать стол</button>
                 </div>
               </div>
             </div>
