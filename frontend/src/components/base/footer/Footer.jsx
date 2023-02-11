@@ -7,6 +7,8 @@ import { footer } from ".././././../../constants";
 import {API_URL_CONTACTS} from '.././././../../api/constant';
 import FormsReserve from '../../../components/forms/FormsReserve';
 import FormsCall from '../../../components/forms/FormsCall';
+import FormsReserveDegustation from '../../../components/forms/FormReserveDegustation';
+import FormsReserveHappy from '../../../components/forms/FormReserveHappy';
 
 const Footer = () => {
 
@@ -86,6 +88,35 @@ const Footer = () => {
                   </div>
                   <div className="modal-body">
                      <FormsCall />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="modal fade" id="degustationModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header text-center">
+                      <h3 className="modal-title fs-5" id="exampleModalLabel">Введите свои данные и мы перезвоним вам в течение 10 минут</h3>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"/>
+                  </div>
+                  <div className="modal-body">
+                     <FormsReserveDegustation />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="modal fade" id="happyModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header text-center">
+                      <h3 className="modal-title fs-5" id="exampleModalLabel">Введите свои данные и мы перезвоним вам в течение 10 минут</h3>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"/>
+                  </div>
+                  <div className="modal-body">
+                     <FormsReserveHappy />
                   </div>
                 </div>
               </div>
