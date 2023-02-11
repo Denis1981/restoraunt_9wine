@@ -19,6 +19,12 @@ import bar_menu from "./bar.webp";
 import menu_menu from "./menu.webp";
 import line_menu from "./line.svg";
 
+import bron from "./bron.webp";
+import menus from "./menus.webp";
+import happy from "./happy.webp";
+import degustation from "./degustation.webp";
+import gallery from "./gallery.webp";
+
 import vk from "./vk.webp";
 import tg from "./tg.webp";
 
@@ -45,4 +51,9 @@ export {
     bar_menu,
     menu_menu,
     line_menu,
+    bron,
+    menus,
+    happy,
+    degustation,
+    gallery,
 };
