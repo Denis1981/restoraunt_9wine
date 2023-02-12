@@ -3,7 +3,6 @@ import axios from "axios";
 import {Link} from 'react-router-dom';
 import "./index.css";
 import { logoFooter } from ".././././../../assets";
-import { footer } from ".././././../../constants";
 import {API_URL_CONTACTS} from '.././././../../api/constant';
 import FormsReserve from '../../../components/forms/FormsReserve';
 import FormsCall from '../../../components/forms/FormsCall';

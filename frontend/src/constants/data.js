@@ -1,4 +1,4 @@
-export const gallery = [
+export const videoData = [
     {
       id: 0,
       title: "Видео1",
@@ -11,3 +11,18 @@ export const gallery = [
    }
 
 ];
+
+export const imageData = [
+    {
+      id: 0,
+      title: "",
+      link: ""
+    },
+    {
+      id: 1,
+      title: "",
+      link: ""
+   }
+
+];
+
