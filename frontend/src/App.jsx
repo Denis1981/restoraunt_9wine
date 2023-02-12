@@ -7,6 +7,7 @@ import ArticlePage from './pages/article/ArticlePage';
 import CelebratesPage from './pages/celebrates/CelebratesPage';
 // import ReservePage from './pages/reserve/ReservePage';
 import ReviewsPage from './pages/reviews/ReviewsPage';
+import GalleryPage from './pages/gallery/GalleryPage';
 import ContactsPage from './pages/contacts/ContactsPage';
 import PolyticsPage from './pages/polytics/PolyticsPage';
 import NotfoundPage from './pages/notfoundpage/NotfoundPage';
@@ -28,7 +29,7 @@ function App() {
                     <Route path="articles/:id" element={<ArticlePage />} />
                     <Route path="/celebrates" element={<CelebratesPage />} />
                     <Route path="/reviews" element={<ReviewsPage />} />
-                    {/*<Route path="/booking" element={<ReservePage />} />*/}
+                    <Route path="/gallery" element={<GalleryPage />} />
                     <Route path="/contacts" element={<ContactsPage />} />
                     <Route path="/polytics" element={<PolyticsPage />} />
                     <Route path="*" element={<NotfoundPage />} />

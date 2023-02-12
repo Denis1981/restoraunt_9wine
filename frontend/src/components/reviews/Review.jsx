@@ -13,10 +13,10 @@ const Review = ({ reviews, loading } ) => {
                     <div className="card mb-3" key={reviews.id}>
                         <div className="row">
                             <div className="col-xxl-4">
-                                <img src={reviews.photo} className="reviews__photo" />
+                                <img src={reviews.photo} className="reviews__photo z-depth-1" />
                             </div>
                             <div className="col-xxl-8">
-                                <div className="card-body">
+                                <div className="card-body border-radius: 10px;">
                                       <h3 className="card-title">{reviews.title}</h3>
                                       <p className="card-text" dangerouslySetInnerHTML={{ __html: reviews.content.slice(0,600) }}/>
                                       <p className="card-text"><small className="text-muted">{reviews.dateReview}</small></p>

@@ -67,7 +67,7 @@ const FormsReserveHappy = () => {
                     <div className="text-center">
                         <p>Нажимая на кнопку, вы соглашаетесь с условиями <Link to="/polytics">политики конфиденциальности</Link></p>
                     </div>
-                    <button type="submit" className="btn btn-reserve mt-2">Зарезервировать стол</button>
+                    <button type="submit" className="btn btn-reserve mt-2 z-depth-1">Зарезервировать стол</button>
                 </form>
             </div>
     </>);

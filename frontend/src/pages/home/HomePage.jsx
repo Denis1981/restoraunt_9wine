@@ -35,7 +35,7 @@ const HomePage = () => {
                                 <ul className="list-unstyled text-center">
                                     <li><Link to="/menu">Меню</Link></li>
                                     <li><Link to="/about">О нас</Link></li>
-                                    <li><Link to="/events">Мероприятия</Link></li>
+                                    <li><Link to="/celebrates">Мероприятия</Link></li>
                                     <li><Link to="/interior">Интерьер</Link></li>
                                     <li><Link to="/articles">Блог</Link></li>
                                     <li><Link to="/contacts">Контакты</Link></li>

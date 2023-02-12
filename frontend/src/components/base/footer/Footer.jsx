@@ -23,7 +23,7 @@ const Footer = () => {
 
     return ( <>
               <footer>
-                  <section id="footer-block">
+                  <section id="footer-block" className="z-depth-1">
                       <div className="container">
                           <div className="row">
                             {contacts.map((contacts, i) => (
@@ -56,7 +56,7 @@ const Footer = () => {
                                    <div className="footer-block__text">
                                       <p><Link to="/polytics">Политика конфиденциальности</Link></p>
                                        <p>
-                                          <button type="button" className="btn btn-reserve" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать стол</button>
+                                          <button type="button" className="btn btn-reserve z-depth-1" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать стол</button>
                                        </p>
                                    </div>
                               </div>

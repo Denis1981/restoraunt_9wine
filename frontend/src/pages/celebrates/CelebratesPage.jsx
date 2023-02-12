@@ -23,7 +23,7 @@ const CelebratesPage = () => {
                 <div className="row">
                     <div className="col-xxl-8">
                         <div className="CelebratesPage__itemPage">
-                            <img src={bron} className="CelebratesPage__image_1" alt="" title=""/>
+                            <img src={bron} className="CelebratesPage__image_1 z-depth-1" alt="" title=""/>
                             <h2 className="">
                                 <Link to="" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">
                                     Забронировать стол
@@ -33,7 +33,7 @@ const CelebratesPage = () => {
                     </div>
                     <div className="col-xxl-4">
                         <div className="CelebratesPage__itemPage">
-                            <img src={menus} className="CelebratesPage__image_2" alt="" title=""/>
+                            <img src={menus} className="CelebratesPage__image_2 z-depth-1" alt="" title=""/>
                             <h2>
                                 <Link to="/menu">
                                     Меню
@@ -45,7 +45,7 @@ const CelebratesPage = () => {
                   <div className="row">
                     <div className="col-xxl-4">
                         <div className="CelebratesPage__itemPage">
-                            <img src={degustation} className="CelebratesPage__image_3" alt="" title=""/>
+                            <img src={degustation} className="CelebratesPage__image_3 z-depth-1" alt="" title=""/>
                             <h2>
                                 <Link to="/degustation">
                                     Дегустационный винный вечер
@@ -55,7 +55,7 @@ const CelebratesPage = () => {
                     </div>
                     <div className="col-xxl-4">
                         <div className="CelebratesPage__itemPage">
-                            <img src={happy} className="CelebratesPage__image_4" alt="" title=""/>
+                            <img src={happy} className="CelebratesPage__image_4 z-depth-1" alt="" title=""/>
                             <h2>
                                 <Link to="/wineday">
                                     Винный день рождения
@@ -65,7 +65,7 @@ const CelebratesPage = () => {
                     </div>
                     <div className="col-xxl-4">
                         <div className="CelebratesPage__itemPage">
-                            <img src={gallery} className="CelebratesPage__image_5" alt="" title=""/>
+                            <img src={gallery} className="CelebratesPage__image_5 z-depth-1" alt="" title=""/>
                             <h2>
                                 <Link to="/gallery">
                                     Галерея
