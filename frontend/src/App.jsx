@@ -5,6 +5,7 @@ import MenuPage from './pages/menu/MenuPage';
 import ArticlesPage from './pages/articles/ArticlesPage';
 import ArticlePage from './pages/article/ArticlePage';
 import CelebratesPage from './pages/celebrates/CelebratesPage';
+import DegustationPage from './pages/degustation/DegustationPage';
 // import ReservePage from './pages/reserve/ReservePage';
 import ReviewsPage from './pages/reviews/ReviewsPage';
 import GalleryPage from './pages/gallery/GalleryPage';
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/celebrates" element={<CelebratesPage />} />
                     <Route path="/reviews" element={<ReviewsPage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
+                    <Route path="/wineevening" element={<DegustationPage />} />
                     <Route path="/contacts" element={<ContactsPage />} />
                     <Route path="/polytics" element={<PolyticsPage />} />
                     <Route path="*" element={<NotfoundPage />} />

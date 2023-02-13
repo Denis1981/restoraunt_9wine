@@ -26,7 +26,7 @@ const Footer = () => {
                       <div className="container">
                           <div className="row">
                             {contacts.map((contacts, i) => (
-                              <div className="col-xxl-4 text-center" key={contacts.id}>
+                              <div className="col-xxl-3 text-center" key={contacts.id}>
                                   <Link to="/">
                                       <img src={logoFooter} alt="" title="" className="logo" />
                                   </Link>
@@ -42,17 +42,22 @@ const Footer = () => {
                                       <p><Link to="/">Главная</Link></p>
                                       <p><Link to="/about">О нас</Link></p>
                                       <p><Link to="/menu">Меню ресторана</Link></p>
+                                      <p><Link to="/reviews">Отзывы</Link></p>
+                                      <p><Link to="/articles">Блог</Link></p>
                                   </div>
                               </div>
                               <div className="col-xxl-3">
                                    <div className="footer-block__text">
-                                      <p><Link to="/celebrates">Мероприятия</Link></p>
-                                      <p><Link to="/reviews">Отзывы</Link></p>
-                                      <p><Link to="/articles">Блог</Link></p>
+                                       <p><b>Мероприятия</b></p>
+                                       <p><Link to="/wineevening">Винный вечер</Link></p>
+                                       <p><Link to="/birthday">Винный день рождения</Link></p>
+                                       <p><Link to="/nightclub">Ночной клуб</Link></p>
+                                       <p><Link to="/gallery">Галерея</Link></p>
                                    </div>
                               </div>
-                              <div className="col-xxl-3 text-center">
+                              <div className="col-xxl-3">
                                    <div className="footer-block__text">
+                                      <p><Link to="/contacts">Контакты</Link></p>
                                       <p><Link to="/polytics">Политика конфиденциальности</Link></p>
                                        <p>
                                           <button type="button" className="btn btn-reserve z-depth-1" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reserveModal">зарезервировать стол</button>

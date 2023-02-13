@@ -1,4 +1,4 @@
-const NotfoundPage = () => {
+const DegustationPage = () => {
 
 
     return (<>
@@ -6,7 +6,7 @@ const NotfoundPage = () => {
 
     <section id="homepage">
         <div className="container">
-            <h2>Страница не найдена</h2>
+            <h2>DegustationPage</h2>
         </div>
     </section>
 
@@ -15,4 +15,4 @@ const NotfoundPage = () => {
     </>);
 }
 
-export default NotfoundPage;
+export default DegustationPage;
