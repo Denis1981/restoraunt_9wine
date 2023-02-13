@@ -4,9 +4,10 @@
 
 #ContactsPage {
     overflow: hidden;
-    background: #F7FAFA;
+    /*background: url('./../../assets/background.webp');*/
+     background: #fff;
     padding: 0 0;
-    margin: 75px 0 0 0;
+    margin: 100px 0 50px 0;
 }
 
 #ContactsPage h2 {

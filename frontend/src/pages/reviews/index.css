@@ -4,8 +4,10 @@
 
 #ReviewsPage {
      overflow: hidden;
-     margin: 100px 0 0 0;
+     margin: 70px 0 0 0;
      padding: 0 0 40px 0;
+     /*background: url('./../../assets/background.webp');*/
+     background: #fff;
 }
 
 #ReviewsPage h1 {
@@ -42,6 +44,8 @@
 #ReviewsPage .card {
      min-height: 300px;
      border: none !important;
+     /*background: url('./../../assets/background.webp');*/
+     background: #fff;
 }
 
 #ReviewsPage .card-body {

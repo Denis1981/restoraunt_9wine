@@ -1,3 +1,9 @@
+import React, {useEffect, useState} from "react";
+import "./index.css";
+import {
+    photo_menu,
+} from "../../assets";
+
 const DegustationPage = () => {
 
 

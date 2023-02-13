@@ -17,13 +17,19 @@ import wine_menu from "./wine.webp";
 import winebar_menu from "./wine-bar.webp";
 import bar_menu from "./bar.webp";
 import menu_menu from "./menu.webp";
-import line_menu from "./line.svg";
+import line_menu from "./line.png";
 
 import bron from "./bron.webp";
 import menus from "./menus.webp";
 import happy from "./happy.webp";
 import degustation from "./degustation.webp";
-import nightclub from "./nightclub.webp";
+import nightclub from "./nightclub-screen1.webp";
+import night_image1 from "./night-image1.webp";
+import night_image2 from "./night-image2.webp";
+import night_image3 from "./night-image3.webp";
+import night_image4 from "./night-image4.webp";
+import night_image5 from "./night-image5.webp";
+
 import gallery from "./gallery.webp";
 
 import vk from "./vk.webp";
@@ -58,4 +64,9 @@ export {
     degustation,
     gallery,
     nightclub,
+    night_image1,
+    night_image2,
+    night_image3,
+    night_image4,
+    night_image5,
 };

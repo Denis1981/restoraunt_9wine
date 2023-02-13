@@ -49,7 +49,7 @@ const Footer = () => {
                               <div className="col-xxl-3">
                                    <div className="footer-block__text">
                                        <p><b>Мероприятия</b></p>
-                                       <p><Link to="/wineevening">Винный вечер</Link></p>
+                                       <p><Link to="/wineevening">Дегустационный винный вечер</Link></p>
                                        <p><Link to="/birthday">Винный день рождения</Link></p>
                                        <p><Link to="/nightclub">Ночной клуб</Link></p>
                                        <p><Link to="/gallery">Галерея</Link></p>

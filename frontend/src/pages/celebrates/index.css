@@ -6,7 +6,8 @@
      overflow: hidden;
      margin: 75px 0 0 0;
      padding: 0 0 40px 0;
-     background: #F7FAFA;
+     /*background: url('./../../assets/background.webp');*/
+     background: #fff;
 }
 
 #CelebratesPage h1 {
@@ -77,7 +78,7 @@
 
 #CelebratesPage .CelebratesPage__image_6 {
     width: 100%;
-    height: 550px;
+    height: 650px;
     border-radius: 5px;
 }
 

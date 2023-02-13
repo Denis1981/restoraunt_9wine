@@ -4,9 +4,10 @@
 
 #AboutUs {
      overflow: hidden;
-     margin: 80px 0 0 0;
+     margin: 75px 0 0 0;
      padding: 0 0 40px 0;
-     background: #F7FAFA;
+     /*background: url('./../../assets/background.webp');*/
+     background: #fff;
 }
 
 #AboutUs h1 {
@@ -40,7 +41,7 @@
 
 #special {
      overflow: hidden;
-     background: #F7CBA8 !important;
+     background: #FFC29E;
      height: auto;
      padding: 20px 0;
      margin: 0 0;
@@ -85,13 +86,14 @@
     width: 200px;
     height: 50px;
     border: 2px solid #AB0508;
-    border-radius: 0;
+    border-radius: 5px;
     color: #000;
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
     margin: 5px 0 0 0;
+
 }
 
 #special .special__btn-more:hover {
@@ -108,6 +110,8 @@
 #aboutBlock {
     overflow: hidden;
     padding: 40px 0;
+    /*background: url('./../../assets/background.webp');*/
+     background: #fff;
 }
 
 #aboutBlock h2 {
@@ -148,6 +152,8 @@
 #karaokeBlock {
     overflow: hidden;
     padding: 0 0 80px 0;
+    /*background: url('./../../assets/background.webp');*/
+     background: #fff;
 }
 
 #karaokeBlock h2 {
@@ -173,7 +179,7 @@
     width: 200px;
     height: 50px;
     border: 2px solid #AB0508;
-    border-radius: 0;
+    border-radius: 5px;
     color: #000;
     text-transform: uppercase;
     font-size: 14px;

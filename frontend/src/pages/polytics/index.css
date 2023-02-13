@@ -4,7 +4,7 @@
 
 #PolyticSpage {
     overflow: hidden;
-    background: #F7FAFA;
+    background: url('./../../assets/background.webp');
     padding: 40px 0;
     margin: 75px 0 0 0;
 }

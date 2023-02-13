@@ -5,7 +5,7 @@
 #footer-block {
     overflow: hidden;
     height: auto;
-    background: #F7CBA8 !important;
+    background: rgba(240, 248, 255, .5) !important;
     padding: 0 0 17px 0;
 }
 
@@ -57,7 +57,7 @@
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
     margin: 5px 0 20px 0;
-
+    border-radius: 5px;
 }
 
 #footer-block .btn-reserve:hover {
