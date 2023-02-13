@@ -7,6 +7,7 @@ import {
     happy,
     degustation,
     gallery,
+    nightclub,
 } from "../../assets";
 
 const CelebratesPage = () => {
@@ -73,7 +74,19 @@ const CelebratesPage = () => {
                             </h2>
                         </div>
                     </div>
-                  </div>
+                </div>
+                <div className="row">
+                    <div className="col-xxl-12">
+                        <div className="CelebratesPage__itemPage">
+                            <img src={nightclub} className="CelebratesPage__image_6 z-depth-1" alt="" title=""/>
+                            <h2>
+                                <Link to="/nightclub">
+                                    Ночной клуб
+                                </Link>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </>);

@@ -4,7 +4,7 @@ const DegustationPage = () => {
     return (<>
 
 
-    <section id="homepage">
+    <section id="DegustationPage">
         <div className="container">
             <h2>DegustationPage</h2>
         </div>

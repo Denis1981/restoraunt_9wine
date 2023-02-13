@@ -23,6 +23,7 @@ import bron from "./bron.webp";
 import menus from "./menus.webp";
 import happy from "./happy.webp";
 import degustation from "./degustation.webp";
+import nightclub from "./nightclub.webp";
 import gallery from "./gallery.webp";
 
 import vk from "./vk.webp";
@@ -56,4 +57,5 @@ export {
     happy,
     degustation,
     gallery,
+    nightclub,
 };

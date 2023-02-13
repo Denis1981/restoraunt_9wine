@@ -6,7 +6,8 @@ import ArticlesPage from './pages/articles/ArticlesPage';
 import ArticlePage from './pages/article/ArticlePage';
 import CelebratesPage from './pages/celebrates/CelebratesPage';
 import DegustationPage from './pages/degustation/DegustationPage';
-// import ReservePage from './pages/reserve/ReservePage';
+import BirthdayPagePage from './pages/birthday/BirthdayPage';
+import NightclubPage from './pages/nightclub/NightclubPage';
 import ReviewsPage from './pages/reviews/ReviewsPage';
 import GalleryPage from './pages/gallery/GalleryPage';
 import ContactsPage from './pages/contacts/ContactsPage';
@@ -32,6 +33,8 @@ function App() {
                     <Route path="/reviews" element={<ReviewsPage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
                     <Route path="/wineevening" element={<DegustationPage />} />
+                    <Route path="/birthday" element={<BirthdayPagePage />} />
+                    <Route path="/nightclub" element={<NightclubPage />} />
                     <Route path="/contacts" element={<ContactsPage />} />
                     <Route path="/polytics" element={<PolyticsPage />} />
                     <Route path="*" element={<NotfoundPage />} />
