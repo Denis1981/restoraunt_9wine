@@ -1,4 +1,6 @@
 import {Routes, Route} from "react-router-dom";
+import {Helmet} from "react-helmet";
+import { HelmetProvider } from 'react-helmet-async';
 import HomePage from './pages/home/HomePage';
 import AboutUsPage from './pages/about/AboutUsPage';
 import MenuPage from './pages/menu/MenuPage';
@@ -19,8 +21,10 @@ import {Layout} from '././components/base/Layout';
 
 
 function App() {
+    const helmetContext = {};
     return (
         <>
+        <HelmetProvider context={helmetContext}>
             <ScrollToTop />
             <Routes>
                     <Route index element={<HomePage />} />
@@ -40,7 +44,7 @@ function App() {
                     <Route path="*" element={<NotfoundPage />} />
                 </Route>
             </Routes>
-
+        </HelmetProvider>
         </>
     );
 }

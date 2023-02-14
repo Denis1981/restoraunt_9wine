@@ -1,6 +1,7 @@
 import React from "react";
 import {useParams, Link, useNavigate} from "react-router-dom";
 import {useState, useEffect} from "react";
+import { Helmet } from 'react-helmet-async';
 import axios from "axios";
 import {API_URL_ARTICLE} from '../../api/constant';
 import "./index.css";
@@ -28,6 +29,24 @@ const ArticlePage = () => {
 
     return (
         <>
+        <Helmet>
+            { /* Standard metadata tags */ }
+            <title>страница</title>
+            <meta name='description' content="" />
+            <meta name='keywords' content="" />
+            { /* End standard metadata tags */ }
+            { /* Facebook tags */ }
+            <meta property="og:type" content="{type}" />
+            <meta property="og:title" content="{title}" />
+            <meta property="og:description" content="{description}" />
+            { /* End Facebook tags */ }
+            { /* Twitter tags */ }
+            <meta name="twitter:creator" content="{name}" />}
+            <meta name="twitter:card" content="{type}" />
+            <meta name="twitter:title" content="{title}" />
+            <meta name="twitter:description" content="{description}" />
+            { /* End Twitter tags */ }
+        </Helmet>
         <section id="ArticlePage">
             <div className="container">
                 <div className="row">

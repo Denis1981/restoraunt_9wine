@@ -3,7 +3,6 @@ const API_URL = 'http://127.0.0.1:8000/api/v1'
 const API_URL_ARTICLES = API_URL + '/articles/?format=json&page_size=6&page=';
 const API_URL_ARTICLE = API_URL + '/articles/';
 const API_URL_CONTACTS = API_URL + '/contacts/?format=json';
-const API_URL_MENUS = API_URL + '/menus/?format=json';
 const API_URL_MENUREST = API_URL + '/menurest/?format=json';
 const API_URL_SALE = API_URL + '/sale/?format=json';
 const API_URL_REVIEWS = API_URL + '/reviews/?format=json&page_size=6&page=';
@@ -20,7 +19,6 @@ export {
     API_URL_ARTICLES,
     API_URL_ARTICLE,
     API_URL_CONTACTS,
-    API_URL_MENUS,
     API_URL_MENUREST,
     API_URL_SALE,
     API_URL_REVIEWS,
