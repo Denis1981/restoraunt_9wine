@@ -10,7 +10,7 @@ import {
     menu_menu,
     line_menu
 } from "../../assets";
-import {API_URL_MENUS} from '../../api/constant';
+import { API_URL_MENUS, API_URL_MENUREST } from '../../api/constant';
 
 const MenuPage = () => {
 

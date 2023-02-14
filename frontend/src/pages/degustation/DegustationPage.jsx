@@ -3,6 +3,7 @@ import "./index.css";
 import {
     photo_menu,
 } from "../../assets";
+import { API_URL_DEGUSTATION } from '../../api/constant';
 
 const DegustationPage = () => {
 

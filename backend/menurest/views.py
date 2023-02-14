@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics, viewsets, mixins
+from rest_framework.views import APIView
+from .models import Menurest
+from .serializers import MenurestSerializer
 
-# Create your views here.
+class MenurestViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Menurest.objects.all()
+    serializer_class = MenurestSerializer

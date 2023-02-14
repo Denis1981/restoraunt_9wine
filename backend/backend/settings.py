@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'articles.apps.ArticlesConfig',
     'menus.apps.MenusConfig',
+    'menurest.apps.MenurestConfig',
     'contacts.apps.ContactsConfig',
     'sale.apps.SaleConfig',
     'polytics.apps.PolyticsConfig',
