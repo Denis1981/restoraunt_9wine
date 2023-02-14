@@ -25,9 +25,19 @@
     text-transform: uppercase;
 }
 
+#MenuPage h3 {
+    font-size: 24px;
+    font-family: 'OpenSans-Bold',sans-serif;
+    font-weight: 800;
+    margin: 0 0 20px 5px;
+    text-transform: uppercase;
+}
+
 #MenuPage p{
     font-family: 'OpenSans-Regular',sans-serif;
     font-weight: 400;
+    font-size: 18px;
+
 }
 
 #MenuPage .MenuPage__photo_menu {
@@ -50,5 +60,14 @@
     height: 10px;
     color: #ccc;
     margin-top: 10px;
+}
+
+#MenuPage .table {
+    border: none !important;
+}
+
+#MenuPage .table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    border-bottom-width: 0 !important;
 }
 

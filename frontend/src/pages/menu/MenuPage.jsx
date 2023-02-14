@@ -10,7 +10,7 @@ import {
     menu_menu,
     line_menu
 } from "../../assets";
-import { API_URL_MENUS, API_URL_MENUREST } from '../../api/constant';
+import {API_URL_MENUREST} from '../../api/constant';
 
 const MenuPage = () => {
 
@@ -20,7 +20,7 @@ const MenuPage = () => {
      useEffect(()=>{
         const getMenus = async () => {
             setLoading(true);
-            const res = await axios.get(API_URL_MENUS);
+            const res = await axios.get(API_URL_MENUREST);
             console.log(res.data);
             setMenus(res.data);
             setLoading(false);
@@ -50,13 +50,10 @@ const MenuPage = () => {
                     <div className="col-xxl-12">
                         {
                             menus.map((menus, i) => (
-                                ((menus.category === 1) && (menus.tags[0] === 1)) && (
-                                    <div className="row" key={menus.id}>
-                                            <div className="col-xxl-8"><p>{menus.title}</p></div>
-                                            <div className="col-xxl-3"><p>{menus.itemPrice}</p></div>
-                                            <div className="col-xxl-1"><p>{menus.itemPriceTotal}</p></div>
-                                     </div>
-                            )))
+                                <div className="col-xxl-12" key={menus.id}>
+                                    <p dangerouslySetInnerHTML={{ __html: menus.wine }}/>
+                                </div>
+                            ))
                         }
                     </div>
                </div>
@@ -70,6 +67,15 @@ const MenuPage = () => {
                    <div className="col-xxl-5 text-center">
                        <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
+                    <div className="col-xxl-12">
+                        {
+                            menus.map((menus, i) => (
+                                <div className="col-xxl-12" key={menus.id}>
+                                    <p dangerouslySetInnerHTML={{ __html: menus.wine_bar }}/>
+                                </div>
+                            ))
+                        }
+                    </div>
                </div>
                 <div className="row MenuPage__bar_menu">
                    <div className="col-xxl-5 text-center">
@@ -81,6 +87,15 @@ const MenuPage = () => {
                    <div className="col-xxl-5 text-center">
                        <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
+                    <div className="col-xxl-12">
+                        {
+                            menus.map((menus, i) => (
+                                <div className="col-xxl-12" key={menus.id}>
+                                    <p dangerouslySetInnerHTML={{ __html: menus.bar }}/>
+                                </div>
+                            ))
+                        }
+                    </div>
                </div>
                 <div className="row MenuPage__menu_menu">
                    <div className="col-xxl-5 text-center">
@@ -92,6 +107,15 @@ const MenuPage = () => {
                    <div className="col-xxl-5 text-center">
                        <img src={line_menu} className="MenuPage__photo_item"/>
                    </div>
+                    <div className="col-xxl-12">
+                        {
+                            menus.map((menus, i) => (
+                                <div className="col-xxl-12" key={menus.id}>
+                                    <p dangerouslySetInnerHTML={{ __html: menus.menu }}/>
+                                </div>
+                            ))
+                        }
+                    </div>
                </div>
             </div>
         </section>
