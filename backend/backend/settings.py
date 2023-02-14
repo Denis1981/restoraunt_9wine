@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'reviews.apps.ReviewsConfig',
     'forms.apps.FormsConfig',
     'events.apps.EventsConfig',
+    'birthday.apps.BirthdayConfig',
+    'degustation.apps.DegustationConfig',
 ]
 
 MIDDLEWARE = [

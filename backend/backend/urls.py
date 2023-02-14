@@ -7,6 +7,8 @@ from sale.views import *
 from articles.views import *
 from menus.views import *
 from reviews.views import *
+from birthday.views import *
+from degustation.views import *
 from polytics.views import *
 from forms.views import *
 from events.views import *
@@ -22,7 +24,9 @@ router.register(r'reserve', FormsReserveViewSet )
 router.register(r'call', FormsCallViewSet )
 router.register(r'events', EventsViewSet )
 router.register(r'degustation', FormsReserveDegustationViewSet )
+router.register(r'wineevening', DegustationViewSet )
 router.register(r'happy', FormsReserveHappyViewSet )
+router.register(r'birthday', BirthdayViewSet )
 router.register(r'polytics', PolyticsViewSet )
 router.register(r'contacts', ContactsViewSet )
 

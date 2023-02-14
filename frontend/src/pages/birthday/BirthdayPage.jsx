@@ -9,14 +9,13 @@ const BirthdayPage = () => {
 
     return (<>
 
+        <section id="BirthdayPage">
+            <div className="container">
+                <div className="row">
 
-    <section id="BirthdayPage">
-        <div className="container">
-            <h2>BirthdayPage</h2>
-        </div>
-    </section>
-
-
+                </div>
+            </div>
+        </section>
 
     </>);
 }

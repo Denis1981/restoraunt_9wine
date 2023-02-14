@@ -1,0 +1,49 @@
+/**
+* BirthdayPage
+ **/
+
+#BirthdayScreen1 {
+     overflow: hidden;
+     margin: -50px 0 0 0;
+     background: url('./../../assets/nightclub-screen1.webp') no-repeat;
+     height: 900px;
+}
+
+#BirthdayScreen1 h1 {
+    font-size: 58px;
+    font-family: 'OpenSans-Bold',sans-serif;
+    font-weight: 800;
+    margin: 350px 0 40px 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#BirthdayScreen1 p {
+    font-size: 20px;
+    font-family: 'OpenSans-Regular',sans-serif;
+    font-weight: 600;
+    margin: 10px auto 20px auto;
+    color: #fff;
+}
+
+#BirthdayScreen1 .btn-reserve {
+    display: block;
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'OpenSans-Bold',sans-serif;
+    font-weight: 800;
+    margin: 0 auto 0 auto;
+    background: #D7D6CD;
+}
+
+#BirthdayScreen1 .btn-reserve:hover {
+    transition: all .5s;
+    background: #AB0508 !important;
+    border: none;
+    color: #fff;
+
+}
