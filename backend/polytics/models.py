@@ -11,5 +11,5 @@ class Polytics(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Политика конфиденциальности'
-        verbose_name_plural = 'Политика конфиденциальности'
+        verbose_name = 'Страница'
+        verbose_name_plural = 'Страницы'

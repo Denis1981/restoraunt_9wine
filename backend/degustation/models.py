@@ -13,6 +13,6 @@ class Degustation(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Страница - Дегустационный винный вечер'
-        verbose_name_plural = 'Страницы - Дегустационный винный вечер'
+        verbose_name = 'Страница'
+        verbose_name_plural = 'Страницы'
 

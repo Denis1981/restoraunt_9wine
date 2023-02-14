@@ -13,6 +13,7 @@ from degustation.views import *
 from polytics.views import *
 from forms.views import *
 from events.views import *
+from seo.views import *
 from contacts.views import *
 from rest_framework import routers
 
@@ -29,6 +30,7 @@ router.register(r'wineevening', DegustationViewSet )
 router.register(r'happy', FormsReserveHappyViewSet )
 router.register(r'birthday', BirthdayViewSet )
 router.register(r'menurest', MenurestViewSet )
+router.register(r'seo', SeoViewSet )
 router.register(r'polytics', PolyticsViewSet )
 router.register(r'contacts', ContactsViewSet )
 

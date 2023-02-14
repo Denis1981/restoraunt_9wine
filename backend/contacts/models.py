@@ -19,5 +19,5 @@ class Contacts(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Контакт'
-        verbose_name_plural = 'Контакты'
+        verbose_name = 'Страница'
+        verbose_name_plural = 'Страницы'

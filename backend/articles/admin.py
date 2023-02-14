@@ -19,7 +19,7 @@ class ArticlesAdmin(admin.ModelAdmin):
     search_fields = ('title',)
     list_filter = ('category', 'tags',)
     readonly_fields = ('views', 'created_at', 'get_photo')
-    fields = ('title', 'slug', 'author', 'category', 'tags', 'content', 'photo', 'get_photo', 'views', 'created_at', 'is_published')
+    fields = ('title', 'slug', 'author', 'category', 'tags', 'content', 'photo', 'get_photo', 'views', 'created_at', 'is_published', 'title_page', 'description', 'keywords', 'og_type', 'og_title', 'og_description', 'twitter_creator', 'twitter_card', 'twitter_title', 'twitter_description',)
     save_as = True
     save_on_top = True
 

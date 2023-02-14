@@ -16,6 +16,6 @@ class Menurest(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Меню ресторана'
-        verbose_name_plural = 'Меню ресторана'
+        verbose_name = 'Опции меню ресторана'
+        verbose_name_plural = 'Опции меню ресторана'
 

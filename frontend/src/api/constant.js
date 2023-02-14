@@ -14,6 +14,8 @@ const API_URL_CREATE_RESERVE = API_URL + '/reserve/';
 const API_URL_CREATE_CALL = API_URL + '/call/';
 const API_URL_CREATE_DEGUSTATION = API_URL + '/degustation/';
 const API_URL_CREATE_HAPPY = API_URL + '/happy/';
+// SEO - модуль
+const API_URL_SEO = API_URL + '/seo/?format=json';
 
 export {
     API_URL_ARTICLES,
@@ -29,4 +31,5 @@ export {
     API_URL_CREATE_CALL,
     API_URL_CREATE_DEGUSTATION,
     API_URL_CREATE_HAPPY,
+    API_URL_SEO,
 }

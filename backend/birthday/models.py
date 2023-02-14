@@ -20,5 +20,5 @@ class Birthday(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Страница - День рождения'
-        verbose_name_plural = 'Страницы - День рождения'
+        verbose_name = 'Страница'
+        verbose_name_plural = 'Страницы'

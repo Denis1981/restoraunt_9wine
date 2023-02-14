@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'events.apps.EventsConfig',
     'birthday.apps.BirthdayConfig',
     'degustation.apps.DegustationConfig',
+    'seo.apps.SeoConfig',
 ]
 
 MIDDLEWARE = [

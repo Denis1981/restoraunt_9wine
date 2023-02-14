@@ -41,8 +41,16 @@ class Articles(models.Model):
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/', verbose_name='Изображение', blank=True)
     is_published = models.BooleanField(default=True, verbose_name='Опубликовано да/нет')
     author = models.CharField(max_length=100, verbose_name='Автор публикации')
-    keywords = models.CharField(max_length=350, verbose_name='Ключи для SEO')
-    description = models.TextField(max_length=350, verbose_name='Описание для SEO')
+    title_page = models.TextField(verbose_name='title')
+    keywords = models.TextField(verbose_name='keywords')
+    description = models.TextField(max_length=350, verbose_name='description')
+    og_type = models.CharField(max_length=500, verbose_name='Facebook og:type')
+    og_title = models.TextField(verbose_name='Facebook og:title')
+    og_description = models.TextField(verbose_name='Facebook og:description')
+    twitter_creator = models.CharField(max_length=500, verbose_name='twitter:creator')
+    twitter_card = models.CharField(max_length=500, verbose_name='twitter:card')
+    twitter_title = models.TextField(verbose_name='twitter:title')
+    twitter_description = models.TextField(verbose_name='twitter:description')
     views = models.IntegerField(default=0, verbose_name='Кол-во просмотров')
 
     def get_absolute_url(self):
