@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import axios from "axios";
 import {CustomLink} from '../CustomLink';
+import NavbarMobile from '../navbarMobile/NavbarMobile';
 import "./index.css";
 import { logoFooter} from "../../../assets";
 import {API_URL_CONTACTS} from '../../../api/constant';
@@ -20,7 +21,7 @@ const Navbar = () => {
 
     return (
             <>
-              <nav className="navbar navbar-expand-lg fixed-top z-depth-1">
+              <nav className="navbar navbar-expand-lg fixed-top z-depth-1 navbar-pc">
               <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
                     <img src={logoFooter} className="logo" alt="" title=""/>
@@ -73,6 +74,9 @@ const Navbar = () => {
                 ))
                 }
               </div>
+            </nav>
+            <nav className="navbar navbar-expand-lg fixed-top z-depth-1 navbar-mobile">
+                 <NavbarMobile />
             </nav>
         </>
 )
