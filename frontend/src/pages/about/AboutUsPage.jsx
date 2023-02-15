@@ -13,41 +13,31 @@ import { image1_about,
          image6_aboutBlock,
          image1_karaokeBlock
 } from "../../assets";
-import {API_URL_SALE} from '../../api/constant';
+import { API_URL_SALE, API_URL_SEO } from '../../api/constant';
 
 const AboutUspage = () => {
 
     const [sale, setSale]=useState([]);
+    const [seoData, setSeoData]=useState([]);
 
      useEffect(()=>{
         const getSale = async () => {
             const res = await axios.get(API_URL_SALE);
-            // console.log(res.data);
             setSale(res.data);
         }
         getSale()
     }, []);
 
+     useEffect(()=>{
+        const getSeoData = async () => {
+            const res = await axios.get(API_URL_SEO);
+            setSeoData(res.data);
+        }
+        getSeoData()
+    }, []);
+
     return (
     <>
-    <Helmet>
-        { /* Standard metadata tags */ }
-        <title>страница</title>
-        <meta name='description' content="" />
-        <meta name='keywords' content="" />
-        { /* End standard metadata tags */ }
-        { /* Facebook tags */ }
-        <meta property="og:type" content="{type}" />
-        <meta property="og:title" content="{title}" />
-        <meta property="og:description" content="{description}" />
-        { /* End Facebook tags */ }
-        { /* Twitter tags */ }
-        <meta name="twitter:creator" content="{name}" />}
-        <meta name="twitter:card" content="{type}" />
-        <meta name="twitter:title" content="{title}" />
-        <meta name="twitter:description" content="{description}" />
-        { /* End Twitter tags */ }
-    </Helmet>
         <section id="AboutUs">
                <div className="container">
                    <div className="row">
@@ -147,6 +137,26 @@ const AboutUspage = () => {
                     </div>
                 </div>
            </section>
+
+            {
+              seoData.map((seoData, i) => (
+                   (seoData.id === 2)  && (
+                  <div key={seoData.id}>
+                    <Helmet>
+                            <title>{seoData.title_page}</title>
+                            <meta name="description" content={seoData.description} />
+                            <meta name="keywords" content={seoData.keywords} />
+                            <meta property="og:type" content={seoData.og_type} />
+                            <meta property="og:title" content={seoData.og_title} />
+                            <meta property="og:description" content={seoData.og_description} />
+                            <meta name="twitter:creator" content={seoData.twitter_creator} />
+                            <meta name="twitter:card" content={seoData.twitter_card} />
+                            <meta name="twitter:title" content={seoData.twitter_title} />
+                            <meta name="twitter:description" content={seoData.twitter_description} />
+                       </Helmet>
+                  </div>
+               )))
+            }
 
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div className="modal-dialog">
