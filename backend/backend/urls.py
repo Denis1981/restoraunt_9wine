@@ -34,6 +34,9 @@ router.register(r'seo', SeoViewSet )
 router.register(r'polytics', PolyticsViewSet )
 router.register(r'contacts', ContactsViewSet )
 
+admin.site.site_header = 'Администрирование | Винный ресторан 9wine'
+admin.site.index_title = 'Административная панель'
+admin.site.site_title = 'Винный ресторан 9wine'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
