@@ -24,7 +24,6 @@ const HomePage = () => {
         const getSeoData = async () => {
             const res = await axios.get(API_URL_SEO);
             setSeoData(res.data);
-            console.log(res.data)
         }
         getSeoData()
     }, []);
@@ -77,6 +76,7 @@ const HomePage = () => {
 
             {
               seoData.map((seoData, i) => (
+                   (seoData.id === 1)  && (
                   <div key={seoData.id}>
                     <Helmet>
                             <title>{seoData.title_page}</title>
@@ -91,8 +91,8 @@ const HomePage = () => {
                             <meta name="twitter:description" content={seoData.twitter_description} />
                        </Helmet>
                   </div>
-               )
-            )}
+               )))
+            }
 
             <div className="modal fade" id="reserveModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-dialog-centered">
