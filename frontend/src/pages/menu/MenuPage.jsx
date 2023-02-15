@@ -17,7 +17,7 @@ const MenuPage = () => {
 
      const [menus, setMenus]=useState([]);
      const [loading, setLoading]=useState([false]);
-    const [seoData, setSeoData]=useState([]);
+     const [seoData, setSeoData]=useState([]);
 
      useEffect(()=>{
         const getMenus = async () => {

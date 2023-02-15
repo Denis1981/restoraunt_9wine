@@ -1,5 +1,8 @@
-import React from 'react';
+import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { API_URL_SEO } from '../../api/constant';
+import axios from "axios";
 import "./index.css";
 import VideoGallery from '../../components/gallery/VideoGallery';
 import ImageGalleryInterior from '../../components/gallery/ImageGalleryInterior';
@@ -7,8 +10,17 @@ import ImageGalleryGuest from '../../components/gallery/ImageGalleryGuest';
 import ImageGalleryMenus from '../../components/gallery/ImageGalleryMenus';
 import ImageGalleryCelebrates from '../../components/gallery/ImageGalleryCelebrates';
 
-
 const GalleryPage = () => {
+
+    const [seoData, setSeoData]=useState([]);
+
+    useEffect(()=>{
+            const getSeoData = async () => {
+                const res = await axios.get(API_URL_SEO);
+                setSeoData(res.data);
+            }
+            getSeoData()
+        }, []);
 
     return (
         <>
@@ -42,6 +54,26 @@ const GalleryPage = () => {
                     </div>
                 </div>
             </section>
+
+        {
+          seoData.map((seoData, i) => (
+               (seoData.id === 11)  && (
+              <div key={seoData.id}>
+                <Helmet>
+                        <title>{seoData.title_page}</title>
+                        <meta name="description" content={seoData.description} />
+                        <meta name="keywords" content={seoData.keywords} />
+                        <meta property="og:type" content={seoData.og_type} />
+                        <meta property="og:title" content={seoData.og_title} />
+                        <meta property="og:description" content={seoData.og_description} />
+                        <meta name="twitter:creator" content={seoData.twitter_creator} />
+                        <meta name="twitter:card" content={seoData.twitter_card} />
+                        <meta name="twitter:title" content={seoData.twitter_title} />
+                        <meta name="twitter:description" content={seoData.twitter_description} />
+                   </Helmet>
+              </div>
+           )))
+        }
         </>);
 };
 
