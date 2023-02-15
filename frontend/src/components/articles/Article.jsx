@@ -7,6 +7,7 @@ const Article = ({ articles, loading } ) => {
         return (<h2>Загрузка...</h2>)
     }
     return (
+        <>
         <div className="row">
             {
                 articles.map((articles, i) => (
@@ -24,6 +25,7 @@ const Article = ({ articles, loading } ) => {
                 ))
             }
         </div>
+        </>
     )
 }
 

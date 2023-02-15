@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import axios from "axios";
+import { API_URL_SEO } from '../../api/constant';
 import "./index.css";
 import {
     bron,
@@ -13,26 +15,18 @@ import {
 
 const CelebratesPage = () => {
 
+    const [seoData, setSeoData]=useState([]);
+
+    useEffect(()=>{
+            const getSeoData = async () => {
+                const res = await axios.get(API_URL_SEO);
+                setSeoData(res.data);
+            }
+            getSeoData()
+        }, []);
+
     return (
         <>
-        <Helmet>
-            { /* Standard metadata tags */ }
-            <title>страница</title>
-            <meta name='description' content="" />
-            <meta name='keywords' content="" />
-            { /* End standard metadata tags */ }
-            { /* Facebook tags */ }
-            <meta property="og:type" content="{type}" />
-            <meta property="og:title" content="{title}" />
-            <meta property="og:description" content="{description}" />
-            { /* End Facebook tags */ }
-            { /* Twitter tags */ }
-            <meta name="twitter:creator" content="{name}" />}
-            <meta name="twitter:card" content="{type}" />
-            <meta name="twitter:title" content="{title}" />
-            <meta name="twitter:description" content="{description}" />
-            { /* End Twitter tags */ }
-        </Helmet>
         <section id="CelebratesPage">
             <div className="container">
                 <div className="row">
@@ -108,6 +102,25 @@ const CelebratesPage = () => {
                 </div>
             </div>
         </section>
+        {
+          seoData.map((seoData, i) => (
+               (seoData.id === 5)  && (
+              <div key={seoData.id}>
+                <Helmet>
+                        <title>{seoData.title_page}</title>
+                        <meta name="description" content={seoData.description} />
+                        <meta name="keywords" content={seoData.keywords} />
+                        <meta property="og:type" content={seoData.og_type} />
+                        <meta property="og:title" content={seoData.og_title} />
+                        <meta property="og:description" content={seoData.og_description} />
+                        <meta name="twitter:creator" content={seoData.twitter_creator} />
+                        <meta name="twitter:card" content={seoData.twitter_card} />
+                        <meta name="twitter:title" content={seoData.twitter_title} />
+                        <meta name="twitter:description" content={seoData.twitter_description} />
+                   </Helmet>
+              </div>
+           )))
+        }
     </>);
 }
 
